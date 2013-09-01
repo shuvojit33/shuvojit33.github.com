@@ -1,0 +1,257 @@
+html, body {
+    margin: 0;
+}
+body {
+    background: url("bg.png") repeat scroll 0 0 #77C6DA;
+    color: #666666;
+    font: 12px "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+a {
+    color: #669999;
+    text-decoration: none;
+}
+a:hover {
+    color: #336666;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 4px 0;
+}
+#top-thin-bar {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.26);
+    height: 3px;
+}
+.header-container {
+    margin: 40px 0 0;
+}
+.container {
+    width: 100%;
+}
+#nav-menu > li a:last-child, #nav-menu > li:last-child {
+    margin-right: 0;
+}
+#nav-menu li {
+    float: left;
+    list-style: none outside none;
+}
+#nav-menu li a {
+    border-radius: 3px 3px 3px 3px;
+    margin: 0 6px;
+    padding: 3px 10px;
+}
+#nav-menu li a:hover, #nav-menu li a:visited, #nav-menu li a:focus {
+    background: none repeat scroll 0 0 rgba(35, 70, 82, 0.3);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px 0 rgba(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+}
+#nav-menu li a {
+    color: #FFFFFF;
+    font: 700 15px georgia,arial,times new roman,serif;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease 0s;
+}
+.header-left {
+    float: left;
+    width: 156px;
+}
+.header-right {
+    float: right;
+    position: relative;
+}
+.header-left-2 {
+    color: #FFFFFF;
+    float: left;
+    font: 14px trebuchet ms,arial;
+    margin-top: 20px;
+    max-width: 62%;
+}
+.header-right-2 {
+    float: right;
+    margin-right: 35px;
+    position: relative;
+    z-index: -1;
+}
+#header-shadow {
+    background: url("sh.png") repeat scroll 0 0 transparent;
+    height: 6px;
+    margin-top: -5px;
+    opacity: 0.6;
+}
+.content {
+    background: url("con-bg.png") repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #5A7A84;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.36);
+    margin-bottom: 18px;
+    min-height: 200px;
+    width: 100%;
+	min-width: 940px;
+}
+.btn {
+    background-color: #BCD6DC;
+    background-image: -moz-linear-gradient(center top , #D6E7EB, #AFC9CF);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 #FFFFFF inset;
+    color: #3D6070;
+    font: bold 15px arial,verdana;
+    margin: 0;
+    padding: 12px 30px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.btn:hover {
+    background: -moz-linear-gradient(center top , #DBECF0, #B9D3D9) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 1px 0 #FFFFFF inset;
+    color: #294C5C;
+}
+.btn-w {
+    padding: 32px 0;
+}
+.first-row {
+    border-bottom: 1px solid #E2F3F7;
+    padding: 40px 0 20px;
+}
+.span4 {
+    background: url("pencil.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 33.3333%;
+}
+.span4 .text-box {
+    margin-left: 97px;
+    margin-right: 6px;
+    position: relative;
+}
+.second-row, .third-row, .footer {
+    border-bottom: 1px solid #E2F3F7;
+    border-top: 1px solid #E2F3F7;
+    margin-top: 1px;
+    padding: 25px 0;
+}
+.btn-on-white {
+	background: #94AEB4; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6E7EB', endColorstr='#AFC9CF'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#D6E7EB), to(#AFC9CF)); 
+	background: -moz-linear-gradient(top,  #D6E7EB,  #AFC9CF); 
+    border: 1px solid #89A1B0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 #FFFFFF inset;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 #FFFFFF inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 #FFFFFF inset;
+	-o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 #FFFFFF inset;
+    color: #3D6070;
+    font: bold 15px arial,verdana;
+    margin: 0;
+    padding: 12px 30px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.btn-on-white:hover {
+	background: #DBECF0; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBECF0', endColorstr='#B9D3D9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#DBECF0), to(#B9D3D9));
+    background: -moz-linear-gradient(center top , #DBECF0, #B9D3D9) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 #FFFFFF inset;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 #FFFFFF inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 #FFFFFF inset;
+	-o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 #FFFFFF inset;
+    color: #294C5C;
+}
+.text-box b {
+    background: none repeat scroll 0 0 rgba(255, 255, 0, 0.2);
+    border-radius: 3px 3px 3px 3px;
+    padding: 2px;
+}
+.third-row .span9 {
+    float: left;
+    width: 75%;
+}
+.third-row .span3 {
+    float: right;
+    width: 25%;
+}
+.highlight-box {
+    background: url("bg-2.png") repeat scroll 0 0 transparent;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 10px #FFFFFF inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 14px 10px 22px;
+}
+.highlight-box .span9 {
+    margin-top: 14px;
+}
+
+.calender {
+    background: url("calender.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 76px;
+    text-align: center;
+    width: 44px;
+}
+.month, .day {
+	color: #444;
+    text-align: center;
+    font: normal 11px/24px josefin sans;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.text-continue {
+    margin: 0 0 0 56px;
+    position: relative;
+}
+
+.fourth-row .span6 {
+    float: left;
+    margin-right: 8%;
+    width: 52%;
+}
+
+.calrow-1 {
+    clear: both;
+    margin: 0;
+}
+
+
+.teacher-pic img {
+    background: none repeat scroll 0 0 #B2C6CF;
+    border-radius: 2px 2px 2px 2px;
+    border-top: 1px solid #7C8A90;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 3px 5px;
+}
+
+.honor-list-2-column-container .span3 {
+    float: left;
+    position: relative;
+	width:20%;
+}
+
+.fourth-row {
+    border-bottom: 1px solid #E2F3F7;
+    border-top: 1px solid #E2F3F7;
+    margin-top: 1px;
+    padding: 25px 0 0;
+}
+.fourth-row h2 {
+margin-bottom:28px;
+}
+
+.honor-list-2-column-container > a {
+    line-height: 36px;
+}
+.footer-left {
+width: 50%;	
+float:left;
+}
+
+.footer-right {
+    float: right;
+}
+.footer-right img {
+    padding: 3px;
+}
+.footer {
+border-bottom: 0;	
+}

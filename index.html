@@ -1,11 +1,452 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shuvojit Das - Blogger & Web Developer</title>
+<meta content="Blogger & Web Developer Shuvojit Das's Portfolio - Online Profile" name="description">
+<meta content="Shuvojit Das" name="author">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<link href="img/favicon.ico"  type="image/x-icon" rel="shortcut icon">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/isotop.js"></script>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+<div class="container">
 
-  </head>
-  <body>
-  
-        <p>Hello World :D</p>
+
+<ul class="theme-selector" style="display:none;">
+	<li>
+    <div class="theme-selector-button">
+        <span class="thm-1"></span>
+        <span class="thm-2"></span>
+        <span class="thm-3"></span>
+        <span class="thm-4"></span>
+        <span class="thm-5"></span>
+        <span class="thm-6"></span>
+        <span class="thm-7"></span>
+    </div>
+    <ul class="color-selector">
+     <div>
+        <li class="default activeli"></li>
+        <li class="light-blue"></li>
+        <li class="orange"></li>
+        <li class="brown"></li>
+        <li class="red"></li>
+        <li class="blue"></li>
+     </div>
+    </ul>
+    </li>
+</ul>  
+<!--bg-color-controller-nav-->  
+<script type="text/javascript">
+		$(function(){
+		var $selectorclass = $('.theme-selector .color-selector'),
+		$selectorlinks = $selectorclass.find('li');
+		$selectorlinks.click(function(){
+		var $this = $(this);
+		// don't proceed if already selected
+		if ( $this.hasClass('activeli') ) {
+		return false;
+		}
+		var $selectorset = $this.parents('.color-selector');
+		$selectorset.find('.activeli').removeClass('activeli');
+		$this.addClass('activeli');
+		});
+		});
+</script>
+
+
+	<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </a>
  
-  </body>
+  <div class="nav-collapse collapse">
+  <ul id="scrollNav" class="nav">
+    <li class="current"><a href="#section-1">ABOUT ME</a></li>
+    <li><a href="#section-2">SKILLS</a></li>
+    <li><a href="#section-3">ADSENSE GALLERY</a></li>
+    <li><a href="#section-4">PORTFOLIO</a></li>
+    <li><a href="#section-5">CONTACTS</a></li>
+  </ul>
+  </div>
+</div>
+</div>
+</div><!-- END navbar-->
+
+<div class="profile fix white-text fullwidth" id="section-1">
+	<div class="profile-inner container">
+        <img class="pro-pic" src="img/profile-pic.jpg" alt="shuvojit das" />
+        <h1>Shuvojit Das</h1>
+        <h2>Blogger <span>&</span> Web Developer</h2>
+        <p>(wanna be :p)</p>
+    </div>
+</div><!-- END profile -->
+
+<div class="about fix fullwidth parallax" data-stellar-background-ratio="0.3">
+  <div class="titlebar black-text">
+  <div class="container">
+  <h2>About Me</h2>
+  </div>
+  </div>
+  <div class="about-inner container">
+  <p>I am Shuvojit Das. I'm learning web design and development, and I also do blogging as an AdSense publisher from 2012. I want to establish my online carrier as a web developer besides blogging, ...because I love to.</p>
+  <div class="social-element">
+  	<ul class="social-icon">
+		<li>
+		<a href="https://www.facebook.com/shuvojit99" target="_blank" class="social-fb"></a>
+		</li>
+		<li>
+		<a href="https://twitter.com/shuvojit_das" target="_blank" class="social-tw"></a>
+		</li>
+		<li>
+		<a href="https://plus.google.com/105817625094413216557/" target="_blank" class="social-g"></a>
+		</li>
+	</ul>
+  </div>
+  </div>
+  
+</div><!--END about-->
+
+<div class="skills-container fix fullwidth ">
+<div id="section-2" class="skills parallax min-height" data-stellar-background-ratio="0.3" >
+  <div class="titlebar white-text">
+  <div class="container">
+  <h2>Skills</h2>
+  </div>
+  </div>
+  
+  <div class="container">
+    <div class="skill-inner row-fluid fix white-text">
+     <div class="skills-left span7">
+     <h4>Skills</h4>
+    	<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w60">Photoshop - <i>60%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w90">HTML - <i>90%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w90">Css3 - <i>90%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w50">JavaScript - <i>50%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w25">jQuery - <i>25%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w60">SEO - <i>60%</i></h3>
+		</div>
+		<div class="single-skillbar">
+			<span>100%</span>
+			<h3 class="w70">AdSense - <i>70%</i></h3>
+		</div>
+    </div>
+      <div class="i-use span5">
+      <h4>I Use</h4>
+      	<ul class="tools clearfix">
+            <li>Photoshop</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Blogger</li>
+            <li>Bootstrap</li>
+            <li>Wordpress</li>
+            <li>Github</li>
+		</ul>
+      </div>
+    </div>
+    </div>
+</div>  
+</div><!--END skills-container-->
+
+<div id="section-3" class="adsense_g fix fullwidth parallax" data-stellar-background-ratio="0.3" >
+  <div class="titlebar black-text">
+  <div class="container">
+  <h2>Adsense Gallery</h2>
+  </div>
+  </div>
+  
+  <div class="container"> 
+  <div class="adsense-slider"> 
+   <div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item">
+            <a href="img/apr-12.jpg" target="_blank" ><img src="img/apr-12.jpg" alt="adsense check"></a>
+            <div class="carousel-caption">
+            <h4>My first check from Google AdSense</h4>
+            </div>
+        </div>
+        <div class="item">
+            <a href="img/jun-12.jpg" target="_blank" ><img src="img/jun-12.jpg" alt="adsense check"></a>
+            <div class="carousel-caption">
+            <h4>Highest earnings in a month of 2012</h4>
+            </div>
+        </div>
+        <div class="item">
+            <a href="img/jan-13.jpg" target="_blank" ><img src="img/jan-13.jpg" alt="adsense check"></a>
+            <div class="carousel-caption">
+            <h4>AdSense Check of January, 2013</h4>
+            </div>
+        </div>
+        <div class="item">
+            <a href="img/feb-13.jpg" target="_blank" ><img src="img/feb-13.jpg" alt="adsense check, shuvojit das"></a>
+            <div class="carousel-caption">
+            <h4>Biggest Check from Google, so far.</h4>
+            </div>
+        </div>
+    </div>    
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    
+    <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+ </div>
+ </div>
+ </div>
+</div><!--END adsense_g-->
+
+<div class="portfolio-container fix fullwidth">
+<div id="section-4" class="portfolio parallax min-height" data-stellar-background-ratio="0.4" >
+  <div class="titlebar white-text">
+  <div class="container">
+  <h2>Portfolio</h2>
+  </div>
+  </div>
+  <div class="container">
+  		<div id="portfolio" class="row-fluid">
+		<section id="options" >
+			<ul id="filters" class="centered option-set clearfix" data-option-key="filter">
+			<li>
+			<a class="selected" data-option-value="*" href="#filter">All</a>
+			</li>
+			<li>
+			<a class="" data-option-value=".psd" href="#filter">PSD 2 HTML</a>
+			</li>
+			<li>
+			<a class="" data-option-value=".css" href="#filter">CSS</a>
+			</li>
+            <li>
+			<a class="" data-option-value=".photoshop" href="#filter">Photoshop</a>
+			</li>
+			</ul>
+		</section>
+		<div id="container" class="clearfix isotope">
+
+		<div class="element  psd isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+			<a class="preview" href="project/psd2html/scooley/index.html" target="_blank">
+              <img src="img/portfolio-2.jpg" alt="shuvojit das portfolio-2"/>
+            </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+			 <h2>Scooley Template</h2>
+			 <p>PSD to HTML conversion 'Scooley' sample template. </p>
+		 </div>
+		</div>
+
+		<div class="element  psd isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+			<a class="preview" href="project/psd2html/dot-design/index.html" target="_blank">
+				<img src="img/portfolio-1.jpg" alt="portfolio" />
+            </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+			 <h2>DotDesign HTML Template</h2>
+			 <p>PSD to HTML sample of DotDesign HTML Template</p>
+		 </div>
+		</div>
+
+		<div class="element  css isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+			<a class="preview" href="project/css-logo.html" target="_blank">
+                <img src="img/portfolio-5.jpg" alt="css3 logo" />
+            </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+			 <h2>CSS3 Logo Sample</h2>
+			 <p>No Image! 'Creative Design' logo with only CSS3</p>
+		 </div>
+		</div>
+
+		<div class="element  css isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+              <a class="preview" href="project/windows-8.html" target="_blank">
+                <img src="img/portfolio-6.jpg" alt="css portfolio" />
+              </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+			 <h2>Windows 8 (CSS3)</h2>
+			 <p> Windows 8 logo designed with CSS3</p>
+		 </div>
+		</div>
+
+		<div class="element  psd isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+			<a class="preview" href="project/psd2html/creative-studio/index.html" target="_blank">
+            	<img src="img/portfolio-3.jpg" alt="phd 2 html shuvojit das" />
+            </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+			 <h2>PSD to HTML of 'Creative Studio'</h2>
+			 <p>Another PSD to HTML work sample.</p>
+		 </div>
+		</div>
+
+		<div class="element psd css isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+ 		  <a class="preview" href="project/btn/btn.html" target="_blank">
+            <img src="img/portfolio-4.jpg" alt="css project" />
+          </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+		   <h2>CSS3 Flat Button</h2>
+			 <p>Flat 'Preview' &amp; 'Download' design with CSS3</p>
+		 </div>
+		</div>
+
+		<div class="element photoshop isotope-item" data-category="transition" >
+		 <div class="portfolio-image">
+ 		  <a class="preview" href="img/portfolio-7-large.jpg" target="_blank">
+            <img src="img/portfolio-7.jpg" alt="portfolio 3d text" />
+          </a>
+		 </div> 
+		 <div class="portfolio-title-desc">
+		   <h2>3D Text with Photoshop </h2>
+			 <p>3D Typography with only Photoshop</p>
+		 </div>
+		</div>
+		</div>
+
+		<script type="text/javascript">
+		$(function(){
+		var $container = $('#container');
+		$container.isotope({
+		itemSelector : '.element'
+		});
+		var $optionSets = $('#options .option-set'),
+		$optionLinks = $optionSets.find('a');
+		$optionLinks.click(function(){
+		var $this = $(this);
+		// don't proceed if already selected
+		if ( $this.hasClass('selected') ) {
+		return false;
+		}
+		var $optionSet = $this.parents('.option-set');
+		$optionSet.find('.selected').removeClass('selected');
+		$this.addClass('selected');
+		// make option object dynamically, i.e. { filter: '.my-filter-class' }
+		var options = {},
+		key = $optionSet.attr('data-option-key'),
+		value = $this.attr('data-option-value');
+		// parse 'false' as false boolean
+		value = value === 'false' ? false : value;
+		options[ key ] = value;
+		if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+		// changes in layout modes need extra logic
+		changeLayoutMode( $this, options )
+		} else {
+		// otherwise, apply new options
+		$container.isotope( options );
+		}
+		return false;
+		});
+		});
+		</script>
+		</div>
+  </div>
+</div>
+</div><!--END portfolio-->
+
+<div class="contacts-container fix fullwidth">
+<div id="section-5" class="contacts parallax min-height" data-stellar-background-ratio="0.3" >
+  <div class="titlebar white-text">
+  <div class="container">
+  <h2>Contacts</h2>
+  </div>
+  </div>
+  
+  <div class="container">
+    <div class="row-fluid contact-inner fix white-text text-left">
+        <div class="span6">
+        <div class="contact-left-inner">
+        <h4 class="contacth4">Contact info</h4><br />
+        <p>Sadarghat, Dhaka 1100, Bangladesh</p>
+<p>Email: contact@shuvojitdas.com<br />
+  Phone: N/A<br />
+Website: www.shuvojitdas.com</p>
+		</div>
+        </div>
+        
+        <div class="span6">
+        <div class="contact-right-inner">
+        <h4 class="contacth4">Let's keep in touch</h4>
+        <iframe width="100%" height="600px" frameborder="0" src="http://kontactr.com/xuser/135992/1d1d1d-ffffff-000000-ffffff">
+        </iframe>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer fix fullwidth ">
+    <div class="container">
+		<p>© 2013 shuvojitdas.com - Portfolio design & developed by <a href="/">Shuvojit Das</a></p>    
+    </div>
+</div>
+<!--Parallax-->
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript">
+        $(function(){
+        $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 0,
+		responsive: true,
+		parallaxBackgrounds: true,
+		parallaxElements: true,
+        });
+        });
+    </script>
+    
+<!--NavScrool-->   
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#scrollNav').onePageNav({
+			begin: function() {
+			console.log('start');
+			},
+			end: function() {
+			console.log('stop');
+			},
+		scrollOffset: 59
+		});
+		
+			e.preventDefault();
+		
+	});
+	</script>
+</body>
 </html>
