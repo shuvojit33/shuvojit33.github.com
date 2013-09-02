@@ -1080,7 +1080,7 @@
 .carousel-caption h4 {
     color: #333333;
     margin: 5px 0;
-	font-size: 14px;
+	font-size: 1em;
 }
 .carousel-inner > .item {
     color: #333333;
@@ -1103,7 +1103,6 @@
 }
 
 .element img {
-    height: 100%;
     width: 100%;
 }
   .nav-collapse {
