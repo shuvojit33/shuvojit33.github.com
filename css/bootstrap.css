@@ -345,20 +345,26 @@ div{
 #scrollNav .current a, #scrollNav .current a:hover{
 color:#148DE1!important;
 }
+.adsense-quote {
+    color: #DD183E;
+    font-family: 'QuicksandBook-Regular',sans-serif,Helvetica,Arial;
+    font-size: 1.5em;
+    margin: 4% auto 1px;	
+}
 .adsense-slider{
-margin:10% auto 15%;
+margin:2% auto 15%;
 max-width:1045px;
 }
 .footer{
 background:#000000;
 }
-.footer p{
-color:#BBBBBB;
-font-size:18px;
-font-style:italic;
-font-weight:200;
-margin:5px auto;
-padding:15px 0;
+
+.footer p {
+    color: #BBBBBB;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin: 5px auto;
+    padding: 15px 0;
 }
 .footer a{
 color:#148DE1;
