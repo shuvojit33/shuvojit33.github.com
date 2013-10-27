@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Minimal Flat Template Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Shuvojit Das" />
+<link rel="shortcut icon" href="../favicon.ico"> 
+
+<!--Stylesheets-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+
+<!--Scripts-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
+<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+<noscript>
+    <link rel="stylesheet" type="text/css" href="css/nojs.css" />
+</noscript>
+
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="topbar fix">
+
+            <div class="logo left">
+                <a href="#"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            
+            <div class="nav-bar right">
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>        
+           </div>
+    </div><!--topbar-->
+    </div><!--container-->
+  
+
+<!--banner-outer-->
+<div class="banner-outer fix">
+<div class="banner fix light container">
+          <!--da-slider-->
+		  <div style=" margin: auto; overflow: visible;" id="da-slider" class="da-slider">
+<!--resp-nav-->
+<div class="">
+	<div class="resp-nav">
+        <ul class="kikomubal">
+        <li id="testSlide1" ><i class="icon-desktop   icon-4x"></i></li>
+        <li id="testSlide2" ><i class="icon-tablet  icon-4x"></i></li>
+        <li id="testSlide3" ><i class="icon-mobile-phone icon-4x"></i></li>
+        </ul>
+     </div><!--/resp-nav-->  
+     </div>
+				<div class="da-slide">
+					<h2>App of the year</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+					<a style="color: #fff" href="#" class="da-link"><i class="icon-shopping-cart"></i>Buy now</a>
+					<div class="da-img"><img src="images/1.png" alt="image01" /></div>
+			  </div>
+				<div class="da-slide">
+					<h2>App of the year</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+					<a style="color: #fff" href="#" class="da-link"><i class="icon-shopping-cart"></i>Buy now</a>
+					<div class="da-img"><img src="images/2.png" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>App of the year</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+					<a style="color: #fff" href="#" class="da-link"><i class="icon-shopping-cart"></i>Buy now</a>
+					<div class="da-img"><img src="images/3.png" alt="image01" /></div>
+				</div>
+
+				<nav class="da-arrows">
+				  <span class="da-arrows-prev"></span>
+				  <span class="da-arrows-next"></span>
+				</nav>
+        
+		 </div><!--/da-slider-->
+         </div>
+</div><!--/banner-outer-->
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//window.onload = function( event ) {
+				//$('#da-slider').cslider( 'page', 2 );
+				//return false;
+ 				//};
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			// example how to go to page 1,2,3 when clicking on a link
+				$('#testSlide1').on( 'click', function( event ) {
+				$('#da-slider').cslider( 'page', 0 );
+				return false;
+				} );
+				
+				$('#testSlide2').on( 'click', function( event ) {
+				$('#da-slider').cslider( 'page', 1 );
+				return false;
+				} );
+				
+				$('#testSlide3').on( 'click', function( event ) {
+				$('#da-slider').cslider( 'page', 2 );
+				return false;
+				} );
+				
+			});
+
+		</script>	
+       
+</body>
+</html>

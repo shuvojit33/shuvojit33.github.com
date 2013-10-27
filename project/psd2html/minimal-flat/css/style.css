@@ -1,0 +1,185 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+border:0 none;
+font:inherit;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+h1, h2, h3, p, ul, ol, pre, dl{
+margin-bottom:1em;
+}
+body{
+margin:0;
+font-family:segoe wp, open sans,sans-serif,Helvetica,Arial; 
+font-size:14px;
+font-weight:normal;
+line-height:normal;
+color:#333333;
+background-color:#ffffff;
+text-align:left;
+}
+a{
+color:#0088cc;
+text-decoration:none;
+outline:0 none !important;
+}
+a:hover,
+a:focus{
+text-decoration:none;
+color: #0099cc;
+}
+.fix {
+	overflow: hidden;
+	position: relative;	
+}
+.left {
+	float: left;	
+}
+.right {
+	float: right;	
+}
+
+.topbar {
+    margin: 0 auto;
+    : 1024px;
+}
+.logo {
+    margin: 22px 5px 18px 0;
+}
+.nav-bar {
+    margin: 40px 0 20px 0;
+}
+.nav-bar ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul li {
+    border-left: 1px solid #666666;
+    display: inline-block;
+    list-style: none outside none;
+}
+.nav-bar ul li:first-child {
+    border: 0 none;
+}
+.nav-bar ul li a {
+    color: #666666;
+    font-size: 1.4em;
+    padding: 2px 10px;
+}
+.nav-bar ul li a:hover {
+	color: #0ab2a4;
+}
+.banner-outer .banner {
+    overflow: visible;
+}
+.banner-outer {
+    background: url("../images/banner-bg-2.jpg") no-repeat scroll center top / 100% 100% transparent;
+    height: auto;
+    width: 100%;
+}
+.light {
+	color: #fff;	
+}
+.slogan h3 {
+    background: url("../images/globe.png") no-repeat scroll 0 1px transparent;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.4em;
+    padding-bottom: 4px;
+    padding-left: 64px;
+    text-transform: uppercase;
+}
+
+
+.slogan h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.slogan p {
+    font-weight: 300;
+    padding-left: 3px;
+}
+.buynow > a {
+    background: #42c5b5;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-left: 57px;
+    padding: 8px 18px 10px;
+    position: relative;
+}
+.buynow > a > i {
+    background: none repeat scroll 0 0 #259d8e;
+    display: inline-block;
+    font-size: 1.5em;
+    left: -56px;
+    padding: 7px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 56px;
+}
+
+.buynow {
+    margin: 15px 0;
+    position: relative;
+}
+.resp-nav {
+    left: 0;
+    position: relative;
+    width: 360px;
+    z-index: 99999;
+	color: rgba(255,255,255,0.6);
+}
+.resp-nav > ul, .resp-nav > li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.resp-nav ul li {
+    display: inline-block;
+    height: 122px;
+    list-style: none outside none;
+    margin-right: -4px;
+    position: relative;
+    width: 33.3333%;
+    cursor: pointer;
+}
+.resp-nav ul li:first-child {
+    margin-left: -4px;
+}
+.resp-nav ul li i {
+    font-size: 5em;
+    position: relative;
+    top: 25%;
+}
+.da-dots-current {
+    background: none repeat scroll 0 0 rgba(0, 100, 106, 0.9) !important;
+    color: rgba(255, 255, 255, 0.8);
+}
+.da-dots-current i {
+    color: rgba(255,255,255,0.7);
+}
+.da-dots-current:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 11px solid rgba(0, 100, 106, 0.9);
+    bottom: -11px;
+    content: "";
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+}
+#testSlide3 {
+background: rgba(0, 119, 126, 0.25);	
+}
+#testSlide2 {
+background: rgba(0, 119, 126, 0.7);	
+}
+#testSlide1 {
+background: rgba(0, 119, 126, 0.9);	
+}
