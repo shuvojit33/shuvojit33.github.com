@@ -459,6 +459,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+	.comleft {
+    font-size: 90%;
+}
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -800,10 +803,21 @@
 }
 
 @media (max-width: 767px) {
+	.comright {
+    height: 380px;
+	padding-top: 6%;
+}
+	.pane-right {
+    margin-top: 30px!important;
+	text-align: center;
+}
+.tab-pane {
+    margin: 60px auto 70px;
+}
 		.da-slide h2 {
 font-size: 2.4em!important;
 }
-	.banner {
+	.banner-outer {
 		background: #069e97 !important;
 	}
   .container {
@@ -904,6 +918,23 @@ font-size: 2.4em!important;
 }
 
 @media (max-width: 480px) {
+	.comleft {
+    font-size: 60%;
+}
+.comleft h4 {
+    line-height: 130px;
+}
+.comleft > p {
+    line-height: 42px;
+}
+	.comright {
+    font-size: 3em !important;
+    padding-top: 9%;
+    height: 250px;
+}
+ul.nav li a {
+    font-size: 0.5em;
+}
 
 .resp-nav {
         margin-left: -20px;
@@ -966,7 +997,18 @@ display: none;
 }
 
 @media (max-width: 979px) {
-
+	.comright {
+    font-size: 4.4em;
+	padding-top: 9%;
+}
+.pane-right {
+    margin-left: 2% !important;
+    margin-top: 0;
+}
+.da-img > img {
+    margin-top: 75px;
+    max-width: 120%;
+}
   body {
     padding-top: 0;
   }
@@ -1125,6 +1167,10 @@ display: none;
   }
 }
 @media (max-width: 600px) {
+.comleft {
+    height: auto;
+    padding: 30px 20px;
+}
 	.da-slide h2 {
 font-size: 1.8em!important;
 }
