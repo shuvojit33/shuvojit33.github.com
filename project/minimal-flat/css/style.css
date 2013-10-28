@@ -94,7 +94,7 @@ color: #0099cc;
     overflow: visible;
 }
 .banner-outer {
-    background: url('../images/banner-bg-2.jpg') no-repeat scroll center top / 100% 100% transparent;
+    background: url('http://lh3.googleusercontent.com/-PZO4EaV0hz8/Um6tiNeo2cI/AAAAAAAACPU/BfWI9-kWWY8/s1600/banner-bg-2.jpg') no-repeat scroll center top / 100% 100% transparent;
     height: auto;
     width: 100%;
 }
@@ -161,13 +161,13 @@ color: #0099cc;
     display: inline-block;
     height: 122px;
     list-style: none outside none;
-    margin-right: -4px;
+    margin-right: 0;
     position: relative;
     width: 33.3333%;
     cursor: pointer;
 }
 .resp-nav ul li:first-child {
-    margin-left: -4px;
+    margin-left: 0;
 }
 .resp-nav ul li i {
     font-size: 5em;
@@ -233,7 +233,7 @@ margin: 0 auto;
 	margin-top: 15px;
 }
 .app-showcase {
-    background: url("../images/showcase-bg.jpg") no-repeat scroll center top / 100% 100% transparent;
+    background: url("http://lh6.googleusercontent.com/-5TycrKxjTfg/Um6tiuEBRRI/AAAAAAAACPY/RE4faNtqEjs/s1600/showcase-bg.jpg") no-repeat scroll center top / 100% 100% transparent;
     color: #FFFFFF;
     height: auto;
     width: 100%;
