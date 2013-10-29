@@ -285,7 +285,7 @@ background-image:url("../img/portfolio-bg.png");
 .contacts{
 /*background-image:url("../img/contact-bg.png");*/
 background-color:#1d1d1d;
-min-height: 800px;
+min-height: 550px;
 }
 .skills-container, .portfolio-container{
 background-image:url("../img/bg-noise.png");
@@ -6174,17 +6174,3 @@ background-color:#765236;
 background-color:#2662A3;
 }
 
-.vc-button {
-    border-radius: 0 0 0 0 !important;
-    box-shadow: none !important;
-    color: #DDDDDD !important;
-}
-.vc-font-family.vcita-watermark {
-    border-radius: 0 0 0 0 !important;
-    margin: 5px auto !important;
-    padding: 6px !important;
-}
-
-.powered-by {
-    display: none !important;
-}
