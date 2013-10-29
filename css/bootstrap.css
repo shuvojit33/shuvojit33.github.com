@@ -5814,10 +5814,12 @@ vertical-align:middle;
 width:295px;
 }
 .portfolio-image{
-margin-bottom:15px;
+margin-bottom:10px;
 }
-.portfolio-title-desc{
-max-width:295px;
+.portfolio-title-desc {
+    max-height: 96px;
+    max-width: 295px;
+    overflow: hidden;
 }
 .portfolio-title-desc h2{
 color:#FFFFFF;
