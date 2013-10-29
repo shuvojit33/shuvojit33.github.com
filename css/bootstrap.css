@@ -6173,3 +6173,18 @@ background-color:#765236;
 .color-selector li.blue{
 background-color:#2662A3;
 }
+
+.vc-button {
+    border-radius: 0 0 0 0 !important;
+    box-shadow: none !important;
+    color: #DDDDDD !important;
+}
+.vc-font-family.vcita-watermark {
+    border-radius: 0 0 0 0 !important;
+    margin: 5px auto !important;
+    padding: 6px !important;
+}
+
+.powered-by {
+    display: none !important;
+}
