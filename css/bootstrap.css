@@ -283,7 +283,7 @@ background-color:#FFF;
 background-image:url("../img/portfolio-bg.png");
 }
 .contacts{
-/*background-image:url("../img/contact-bg.png");*/
+background-image:url("../img/contact-bg.png");
 background-color:#1d1d1d;
 min-height: 550px;
 }
