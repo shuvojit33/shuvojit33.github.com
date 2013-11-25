@@ -1,64 +1,77 @@
-* {
-margin: 0;
-padding: 0;	
+*{
+margin:0;
+padding:0;
 }
-
-.curve {
-    bottom: 0;
-    height: 220px;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
+.curve{
+bottom:0;
+height:220px;
+overflow:hidden;
+position:absolute;
+width:100%;
 }
-.curve1 {
-	-moz-animation: fromRightAnim1 .5s linear infinite;
-	-webkit-animation: fromRightAnim1 1s linear infinite;
-	position: absolute;	
-	z-index: 10;
+.curve1{
+/*animation*/
+-webkit-animation:fromRightAnim1 .5s linear infinite;
+   -moz-animation:fromRightAnim1 .5s linear infinite;
+    -ms-animation:fromRightAnim1 .5s linear infinite;
+     -o-animation:fromRightAnim1 .5s linear infinite;
+        animation:fromRightAnim1 .5s linear infinite;
+position:absolute;
+z-index:10;
 }
 .curve2{
-	-moz-animation: fromRightAnim2 0.9s linear infinite;
-	-webkit-animation: fromRightAnim2 3s linear infinite;
-	position: absolute;	
-	z-index: 9;
+/*animation*/
+-webkit-animation:fromRightAnim2 0.9s linear infinite;
+   -moz-animation:fromRightAnim2 0.9s linear infinite;
+    -ms-animation:fromRightAnim2 0.9s linear infinite;
+     -o-animation:fromRightAnim2 0.9s linear infinite;
+        animation:fromRightAnim2 0.9s linear infinite;
+position:absolute;
+z-index:9;
 }
 .curve4{
-	-moz-animation: fromRightAnim4 1.6s linear infinite;
-	-webkit-animation: fromRightAnim4 1.5s linear infinite;
-	position: absolute;	
-	z-index: 7;
+/*animation*/
+-webkit-animation:fromRightAnim4 1.6s linear infinite;
+   -moz-animation:fromRightAnim4 1.6s linear infinite;
+    -ms-animation:fromRightAnim4 1.6s linear infinite;
+     -o-animation:fromRightAnim4 1.6s linear infinite;
+        animation:fromRightAnim4 1.6s linear infinite;
+position:absolute;
+z-index:7;
 }
 .boat{
-	-moz-animation: fromRightAnim5 20s linear infinite;
-	position: absolute;	
-	z-index: 8;
-	
+/*animation*/
+-webkit-animation:fromRightAnim5 20s linear infinite;
+   -moz-animation:fromRightAnim5 20s linear infinite;
+    -ms-animation:fromRightAnim5 20s linear infinite;
+     -o-animation:fromRightAnim5 20s linear infinite;
+        animation:fromRightAnim5 20s linear infinite;
+position:absolute;
+z-index:8;
 }
-
 @-moz-keyframes fromRightAnim1{
-	0%{ left: 0; bottom: 0px; }
+0%{ left: 0; bottom: 0px; }
 	25%{ bottom: -1px; }
 	50%{ bottom: 0; }
 	75%{ bottom: -1px; }
 	100%{ left: -257px;  bottom: 0px; }
 }
 @-moz-keyframes fromRightAnim2{
-	0%{ left: 0;  bottom: 10px; }
+0%{ left: 0;  bottom: 10px; }
 	25%{ bottom: 5px; }
 	50%{ bottom: 12px; }
 	75%{ bottom: 5px; }
 	100%{ left: -257px;  bottom: 10px; }
 }
-
 @-moz-keyframes fromRightAnim4{
-	0%{ left: 0;  bottom: 16px; }
+0%{ left: 0;  bottom: 16px; }
 	25%{ bottom: 11px; }
 	50%{ bottom: 15px; }
 	75%{ bottom: 11px; }
 	100%{ left: -257px;  bottom: 16px; }
 }
 @-moz-keyframes fromRightAnim5{
-	0%{ left: -290px;  bottom: 170px; transform: rotate(-3deg); }
+0%{ left: -290px;  bottom: 170px; transform: rotate(-3deg); }
 	4%{ bottom: 160px; transform: rotate(1deg);}
 	8%{ bottom: 170px; transform: rotate(-3deg); }
 	12%{ bottom: 160px; transform: rotate(2deg);}
@@ -86,4 +99,103 @@ padding: 0;
 	97%{ bottom: 160px; transform: rotate(2deg);}
 	100%{ left: 110%;  bottom: 170px; transform: rotate(2deg); }
 }
-
+@-webkit-keyframes fromRightAnim1{
+0%{ left: 0; bottom: 0px; }
+	25%{ bottom: -1px; }
+	50%{ bottom: 0; }
+	75%{ bottom: -1px; }
+	100%{ left: -257px;  bottom: 0px; }
+}
+@-webkit-keyframes fromRightAnim2{
+0%{ left: 0;  bottom: 10px; }
+	25%{ bottom: 5px; }
+	50%{ bottom: 12px; }
+	75%{ bottom: 5px; }
+	100%{ left: -257px;  bottom: 10px; }
+}
+@-webkit-keyframes fromRightAnim4{
+0%{ left: 0;  bottom: 16px; }
+	25%{ bottom: 11px; }
+	50%{ bottom: 15px; }
+	75%{ bottom: 11px; }
+	100%{ left: -257px;  bottom: 16px; }
+}
+@-webkit-keyframes fromRightAnim5{
+0%{ left: -290px;  bottom: 170px; transform: rotate(-3deg); }
+	4%{ bottom: 160px; transform: rotate(1deg);}
+	8%{ bottom: 170px; transform: rotate(-3deg); }
+	12%{ bottom: 160px; transform: rotate(2deg);}
+	16%{ bottom: 170px; transform: rotate(-3deg); }
+	20%{ bottom: 160px; transform: rotate(3deg);}
+	24%{ bottom: 170px; transform: rotate(-4deg); }
+	28%{ bottom: 160px; transform: rotate(2deg);}
+	32%{ bottom: 170px; transform: rotate(-3deg); }
+	36%{ bottom: 160px; transform: rotate(1deg);}
+	40%{ bottom: 170px; transform: rotate(-3deg);}
+	44%{ bottom: 160px; transform: rotate(2deg);}
+	48%{ bottom: 170px; transform: rotate(-2deg);}
+	52%{ bottom: 160px; transform: rotate(3deg);}
+	56%{ bottom: 170px; transform: rotate(-4deg);}
+	60%{ bottom: 160px; transform: rotate(2deg);}
+	64%{ bottom: 170px; transform: rotate(-1deg);}
+	68%{ bottom: 160px; transform: rotate(0deg);}
+	72%{ bottom: 170px; transform: rotate(-0deg);}
+	74%{ bottom: 160px; transform: rotate(1deg);}
+	78%{ bottom: 170px; transform: rotate(-3deg);}
+	82%{ bottom: 160px; transform: rotate(1deg);}
+	86%{ bottom: 170px; transform: rotate(-2deg);}
+	90%{ bottom: 160px; transform: rotate(2deg);}
+	94%{ bottom: 170px; transform: rotate(-3deg);}
+	97%{ bottom: 160px; transform: rotate(2deg);}
+	100%{ left: 110%;  bottom: 170px; transform: rotate(2deg); }
+}
+@-o-keyframes fromRightAnim1{
+0%{ left: 0; bottom: 0px; }
+	25%{ bottom: -1px; }
+	50%{ bottom: 0; }
+	75%{ bottom: -1px; }
+	100%{ left: -257px;  bottom: 0px; }
+}
+@-o-keyframes fromRightAnim2{
+0%{ left: 0;  bottom: 10px; }
+	25%{ bottom: 5px; }
+	50%{ bottom: 12px; }
+	75%{ bottom: 5px; }
+	100%{ left: -257px;  bottom: 10px; }
+}
+@-o-keyframes fromRightAnim4{
+0%{ left: 0;  bottom: 16px; }
+	25%{ bottom: 11px; }
+	50%{ bottom: 15px; }
+	75%{ bottom: 11px; }
+	100%{ left: -257px;  bottom: 16px; }
+}
+@-o-keyframes fromRightAnim5{
+0%{ left: -290px;  bottom: 170px; transform: rotate(-3deg); }
+	4%{ bottom: 160px; transform: rotate(1deg);}
+	8%{ bottom: 170px; transform: rotate(-3deg); }
+	12%{ bottom: 160px; transform: rotate(2deg);}
+	16%{ bottom: 170px; transform: rotate(-3deg); }
+	20%{ bottom: 160px; transform: rotate(3deg);}
+	24%{ bottom: 170px; transform: rotate(-4deg); }
+	28%{ bottom: 160px; transform: rotate(2deg);}
+	32%{ bottom: 170px; transform: rotate(-3deg); }
+	36%{ bottom: 160px; transform: rotate(1deg);}
+	40%{ bottom: 170px; transform: rotate(-3deg);}
+	44%{ bottom: 160px; transform: rotate(2deg);}
+	48%{ bottom: 170px; transform: rotate(-2deg);}
+	52%{ bottom: 160px; transform: rotate(3deg);}
+	56%{ bottom: 170px; transform: rotate(-4deg);}
+	60%{ bottom: 160px; transform: rotate(2deg);}
+	64%{ bottom: 170px; transform: rotate(-1deg);}
+	68%{ bottom: 160px; transform: rotate(0deg);}
+	72%{ bottom: 170px; transform: rotate(-0deg);}
+	74%{ bottom: 160px; transform: rotate(1deg);}
+	78%{ bottom: 170px; transform: rotate(-3deg);}
+	82%{ bottom: 160px; transform: rotate(1deg);}
+	86%{ bottom: 170px; transform: rotate(-2deg);}
+	90%{ bottom: 160px; transform: rotate(2deg);}
+	94%{ bottom: 170px; transform: rotate(-3deg);}
+	97%{ bottom: 160px; transform: rotate(2deg);}
+	100%{ left: 110%;  bottom: 170px; transform: rotate(2deg); }
+}
