@@ -46,20 +46,20 @@ var data = {
 };//data JSON
 
 $('#isSelect').click(function () {
+		$("#storeSearch_wentWrong").css("display","none");
+		$('#storeSearch_wentWrong').empty();
+	
 	var city_nameValue = $('#location');
  
 	if (city_nameValue.length == 0 || $(city_nameValue).val() == "")
 	{		
-		$('#storeSearch_alert').empty().append("<p>Please selecet a place</p>");
-		$("#storeSearch_alert").css("display","block");
 		$("#store_result_Head, #storeResult, #resultFound").css("display","none");
 		$('#store_result_Head, #storeResult, #resultFound').empty();
-		
+				
 	}//if
 	
 	else {
-		$('#storeSearch_alert').empty();
-				
+						
 		var template = $('#templateID').html();
 		var html = Mustache.to_html(template, data);
 		$(function(){
@@ -70,6 +70,7 @@ $('#isSelect').click(function () {
 		$("#resultFound").css("display","block");
 		$('#store_result_Head').empty() .append("<span class='first-col'>Store Name</span><span class='second-col'>Address</span><span class='third-col'>Phone</span>");
 		$("#store_result_Head").css("display","block");
-	}//else
+		
+		}//else
 	
 }); //function
