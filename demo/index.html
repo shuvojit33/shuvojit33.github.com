@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blogger Dynamic Slider</title>
+</head>
+
+<body style="background: #fff; margin: 10px">
+
+    <!-- Include bdSlider dependency script -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.1/jquery.flexslider-min.js"></script>
+
+    <!-- jQuery Blogger Dynamic Slider JS -->
+    <script type="text/javascript" src="jquery.bdslider.js"></script>
+
+
+    <!--CDNize-->
+    <!--     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.1/jquery.flexslider-min.js"></script>
+    -->
+    <style type="text/css">
+    /**
+     *  jQuery BloggerDynamicSlider v1.0.0
+     *  Copyright 2016 http://shuvojitdas.com
+     *  Contributing Author: Shuvojit Das
+     *  
+     */
+    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css");
+    /* Preloader */
+    
+    .flexslider.loading:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(https://lh3.googleusercontent.com/-WWve06d4dB4/Vq28tN4LMUI/AAAAAAAAFcM/k8IQajpDnS4/h120/loader.gif) no-repeat center center;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+    }
+    
+    .flexslider.loading ul.flex-direction-nav,
+    .flexslider.loading ol,
+    .loading .flex-caption {
+        display: none;
+    }
+    
+    .flexslider {
+        border: 1px solid #AFAFAF;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        margin: 0 auto 60px auto;
+    }
+    
+    .flexslider a {
+        text-decoration: none;
+    }
+    /* Caption/Post Title */
+    
+    .flex-caption {
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 60px;
+        background: #FFFFFF;
+        color: #1C1C1C;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 26px;
+        margin: 0;
+    }
+    
+    .flex-caption span {
+        display: table-cell;
+        vertical-align: middle;
+        height: 60px;
+    }
+    
+    .flex-caption.overlayDark,
+    .flex-caption.overlayLight {
+        margin-bottom: -60px;
+        bottom: 60px;
+        position: relative;
+    }
+    
+    .flex-caption.overlayDark {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+    
+    .flex-caption.overlayLight {
+        background: rgba(255, 255, 239, 0.9);
+        color: #000;
+    }
+    
+    ul.slides li a {
+        display: block;
+        overflow: hidden;
+    }
+    /* blogger css conflicts fix */
+    
+    .flexslider ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: initial !important;
+    }
+    
+    .flexslider ul.flex-direction-nav li {
+        margin: 0;
+        padding: 0;
+        line-height: initial;
+    }
+    
+    .flexslider ul li {
+        margin-bottom: 0 !important;
+    }
+    
+    .flexslider img {
+        padding: 0;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    ul.flex-direction-nav {
+        position: static;
+    }
+    
+    ul.flex-direction-nav li {
+        position: static;
+    }
+    
+    @media (max-width: 600px) {
+        .flex-caption {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    </style>
+    <div id="slider2"></div>
+    <div id="slider1"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#slider1").BloggerDynamicSlider({
+            imageWidth: 800,
+            imageHeight: 350,
+            maxItem: 7,
+            blogURL: "http://labelpost.blogspot.com",
+            animation: "fade",
+            postTitleStyle: "overlayLight",
+
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#suckit").BloggerDynamicSlider({
+            blogURL: "http://labelpost.blogspot.com",
+            imageWidth: 200,
+            imageHeight: 200,
+            maxItem: 2,
+            animation: "slide",
+            labelName: "Demo Photo",
+            postTitleStyle: "overlayDark",
+        });
+
+    });
+    </script>
+    <div>
+        <div id="testing">
+            <div>
+                <div>
+                    <div id="suckit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
