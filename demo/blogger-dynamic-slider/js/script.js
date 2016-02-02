@@ -41,7 +41,7 @@ $(document).ready(function() {
     $('#' + demoNum + ' #demos-nav a.' + demoNum).addClass("active");
 
 
-    $("#footer").append('<div class="btn"><a href="#" target="_blank">Back To The Tutorial</a></div>');
+    $("#footer").append('<div class="btn"><a href="http://imagesliderforblogger.blogspot.com/2016/02/blogger-dynamic-slider-by-label-or-recent-posts.html" target="_blank">Back To The Tutorial</a></div>');
 
 });
 
