@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Blogger Dynamic Slider - DEMO 4 | DIMPost</title>
+    <meta name="description" content="Blogger Dynamic Slider Plugin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/demo-css.css" rel="stylesheet" type="text/css">
+    <!--  BloggerDynamicSlider Required Scripts & CSS-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bdslider.css">
+    <script type="text/javascript" src="js/jquery.bdslider.min.js"></script>
+</head>
+
+<body>
+    <div id="demo4" class="fluid_container">
+        <h2>Blogger Dynamic Slider - DEMO</h2>
+        <h1 class="demoTitle"></h1>
+        <h4>Please resize browser window to see responsiveness / fluidness </h4>
+        <div id="demos-nav" class="btn"></div>
+        <br />
+    </div>
+    <!-- .fluid_container -->
+    <div id="first-slider"></div>
+    <div id="second-slider"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // first-slider
+        $("#first-slider").BloggerDynamicSlider({
+            blogURL: "http://labelpost.blogspot.com/", 
+            labelName: "Delicious Cake", 
+            maxItem: 4, 
+            showPostTitle: false, 
+            animation: "slide",        
+        });
+
+        // second-slider
+        $("#second-slider").BloggerDynamicSlider({
+            blogURL: "http://labelpost.blogspot.com/", 
+            labelName: "Demo Photo", 
+            maxItem: 7, 
+            showPostTitle: true,
+            animation: "fade",  
+            postTitleStyle: "overlayLight",
+            imageWidth: 800, 
+            imageHeight: 500,      
+        });
+    });
+    </script>
+    <br/>
+    <div id="code-section">
+        <h3>HTML & JS Behind This Demo:</h3>
+        <pre class="highlight line-numbers"><code class="language-markup">&lt;div id=&quot;first-slider&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;second-slider&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function() {
+    // first-slider
+    $(&quot;#first-slider&quot;).BloggerDynamicSlider({
+        blogURL: &quot;http://labelpost.blogspot.com/&quot;,
+        labelName: &quot;Delicious Cake&quot;,
+        maxItem: 4,
+        showPostTitle: false,
+        animation: &quot;slide&quot;,
+    });
+
+    // second-slider
+    $(&quot;#second-slider&quot;).BloggerDynamicSlider({
+        blogURL: &quot;http://labelpost.blogspot.com/&quot;,
+        labelName: &quot;Demo Photo&quot;,
+        maxItem: 7,
+        showPostTitle: true,
+        animation: &quot;fade&quot;,
+        postTitleStyle: &quot;overlayLight&quot;,
+        imageWidth: 800,
+        imageHeight: 500,
+    });
+});
+&lt;/script&gt;</code></pre>
+    </div>
+    <div id="footer"></div>
+    <!--Load prismJS-->
+    <script src="js/script.js" type="text/javascript"></script>
+    <link href="css/prism-1.5.css" rel="stylesheet" type="text/css">
+    <script src="js/prism.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -15,15 +15,11 @@
 </head>
 
 <body>
-    <div class="fluid_container">
+    <div id="demo1" class="fluid_container">
         <h2>Blogger Dynamic Slider - DEMO</h2>
-        <h1>DEMO 1: Default Slider</h1>
+        <h1 class="demoTitle"></h1>
         <h4>Please resize browser window to see responsiveness / fluidness </h4>
-        <div class="btn" style="text-align: center">
-            <a class="active" href="demo-1.html">Demo 1</a>
-            <a href="demo-2.html">Demo 2</a>
-            <a href="demo-3.html">Demo 3</a>
-        </div>
+        <div id="demos-nav" class="btn"></div>
         <br />
     </div>
     <!-- .fluid_container -->
@@ -31,7 +27,13 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $("#slider1").BloggerDynamicSlider({
-            blogURL: "http://labelpost.blogspot.com/", // Your Blog URL. example: "http://imagesliderforblogger.blogspot.com"
+            blogURL: "http://labelpost.blogspot.com",
+            maxItem: 8,
+            animation: "slide",
+            labelName: "Demo Photo",
+            postTitleStyle: "overlayDark",
+            imageWidth: 800,
+            imageHeight: 500,
         });
     });
     </script>
@@ -49,9 +51,9 @@ $(document).ready(function() {
     </div>
     <div id="footer"></div>
     <!--Load prismJS-->
+    <script src="js/script.js" type="text/javascript"></script>
     <link href="css/prism-1.5.css" rel="stylesheet" type="text/css">
     <script src="js/prism.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
