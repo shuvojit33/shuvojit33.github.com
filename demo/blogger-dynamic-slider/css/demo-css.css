@@ -10,7 +10,7 @@ body {
 }
 
 .fluid_container {
-    margin: 10px auto 25px auto;
+    margin: 10px auto 20px auto;
     max-width: 900px;
     width: 90%;
     overflow: hidden;
@@ -33,7 +33,9 @@ h4,
 #demos-nav {
     text-align: center;
 }
-
+#demos-nav {
+    padding-top: 10px;
+}
 h4 {
     font-weight: 400;
 }
@@ -44,10 +46,12 @@ h4 {
     padding: 2px 8px;
     text-decoration: none;
     margin-right: 14px;
-    line-height: 2em;
+    line-height: 1.5em;
     border: 1px solid;
     font-weight: 400;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 14px;
 }
 
 .btn a:hover,
