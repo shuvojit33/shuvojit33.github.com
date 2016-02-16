@@ -3367,11 +3367,12 @@ content:"";
 .nav-pills:after{
 clear:both;
 }
-.nav-tabs > li, .nav-pills > li{
-background:none repeat scroll 0 0 #0D7078;
-display:inline-block;
-margin-right:0;
-width:16.667%;
+.nav-tabs > li, .nav-pills > li {
+    background: none repeat scroll 0 0 #0D7078;
+    display: block;
+    margin-right: 0;
+    width: 16.667%;
+    float: left;
 }
 .nav-tabs > li > a, .nav-pills > li > a{
 line-height:14px;
