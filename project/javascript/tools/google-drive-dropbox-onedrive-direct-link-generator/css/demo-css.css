@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); 
+
+body {
+    margin: 0 10px;
+    padding: 0;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 16px;
+    background: url(images/bg.png) #FFF;
+    color: #000;
+}
+
+.fluid_container {
+    margin: 10px auto 20px auto;
+    max-width: 900px;
+    width: 90%;
+    overflow: hidden;
+    text-align: right;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #E91E63;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1em;
+}
+
+h1 strong {
+    font-weight: 400;
+}
+
+h3,
+h4,
+#demos-nav {
+    text-align: center;
+}
+#demos-nav {
+    padding-top: 10px;
+}
+h4 {
+    font-weight: 400;
+}
+
+.btn a {
+    color: #03A9F4;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2px 8px;
+    text-decoration: none;
+    margin-right: 14px;
+    line-height: 1.5em;
+    border: 1px solid;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.btn a:hover,
+.btn a.active {
+    color: #E91E63;
+}
+
+.btn {
+    text-align: center;
+}
+
+#code-section {
+    display: none;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+#code-section h3 {
+    text-align: left;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+

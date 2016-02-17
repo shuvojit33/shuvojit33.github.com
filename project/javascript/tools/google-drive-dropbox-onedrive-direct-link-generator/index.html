@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Google drive, dropbox, onedrive direct link generator</title>
+    <meta name="description" content="Google drive, dropbox, onedrive direct link generator online tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/demo-css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <style>
+    input {
+        width: 98%;
+        height: 20px;
+    }
+    
+    .fluid_container {
+        margin-top: 2em;
+    }
+    
+    button#gnrt {
+        height: 25px;
+    }
+    
+    @media (max-width: 800px) {
+        td {
+            float: left;
+            display: block;
+            width: 100%;
+            text-align: left;
+            height: auto;
+        }
+        button#gnrt {
+            margin: 20px auto;
+        }
+        label {
+            height: 30px;
+            display: block;
+        }
+    }
+    
+    #footer {
+        margin-top: 17em;
+    }
+    
+    table {
+        margin-top: 3em;
+    }
+    </style>
+    <div class="fluid_container">
+    <h1>direct download link generator tool</h1>
+        <h1><span style="color:#333">for Google drive, dropbox & onedrive</span></h1>
+        <table width="100%" border="0">
+            <tr>
+                <td width="20%" height="70">
+                    <label for="inputText">Enter Share link:</label>
+                </td>
+                <td width="65%">
+                    <input id="inputText" type="text" placeholder="e.g., https://drive.google.com/file/d/0B0k76GMavVymS2RPY3RGTzgwVzg/view?usp=sharing" />
+                </td>
+                <td width="10%">
+                    <button id="gnrt">Generate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="outputText">Direct Download link:</label>
+                </td>
+                <td>
+                    <input id="outputText" readonly="readonly" type="text" />
+                </td>
+            </tr>
+        </table>
+        <script>
+        function $das(x) {
+            return document.getElementById(x);
+        }
+
+        function generatelink() {
+            var el = $das("inputText").value,
+                googleURI = el.indexOf("google.com/file/d/"),
+                dropboxURI = el.indexOf("dropbox.com/s"),
+                onedriveURI = el.indexOf("onedrive.live.com");
+
+            if (googleURI != -1) {
+                var prefix = el.indexOf("d/");
+                var camelKey = el.indexOf("/view");
+                var data = el.slice(prefix + 2, camelKey);
+                var outURL = "https://drive.google.com/uc?export=download&id=" + data + "";
+                $das("outputText").value = outURL;
+                $das("outputText").select();
+            } else {
+                if (dropboxURI != -1) {
+                    outURL = el.replace("?dl=0", "?dl=1");
+                    $das("outputText").value = outURL;
+                    $das("outputText").select();
+                } else {
+                    if (onedriveURI != -1) {
+                        outURL = el.replace("redir", "download");
+                        $das("outputText").value = outURL;
+                        $das("outputText").select();
+                    } else {
+                        if (el.length == "0") {
+                            $das("outputText").value = "ENTER A VALID URL FIRST!";
+                        } else {
+                            $das("outputText").value = "INVALID URL!";
+                        }
+                    }
+
+                }
+            }
+        }
+        window.onload = function() {
+            $das("inputText").focus();
+            $das("gnrt").onclick = generatelink;
+        };
+        </script>
+        <div id="footer">
+            <center>
+                <p>© 2016 shuvojitdas.com - developed by <a href="http://shuvojitdas.com/" target="_blank">Shuvojit Das</a></p>
+            </center>
+        </div>
+</body>
+
+</html>
