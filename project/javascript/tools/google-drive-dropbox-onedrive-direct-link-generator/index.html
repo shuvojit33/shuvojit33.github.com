@@ -51,7 +51,7 @@
     }
     </style>
     <div class="fluid_container">
-    <h1>direct download link generator tool</h1>
+        <h1>direct download link generator tool</h1>
         <h1><span style="color:#333">for Google drive, dropbox & onedrive</span></h1>
         <table width="100%" border="0">
             <tr>
@@ -86,10 +86,10 @@
                 onedriveURI = el.indexOf("onedrive.live.com");
 
             if (googleURI != -1) {
-                var prefix = el.indexOf("d/");
-                var camelKey = el.indexOf("/view");
-                var data = el.slice(prefix + 2, camelKey);
-                var outURL = "https://drive.google.com/uc?export=download&id=" + data + "";
+                var red = el.indexOf("d/"),
+                    cover = el.indexOf("/view"),
+                    data = el.slice(red + 2, cover),
+                    outURL = "https://drive.google.com/uc?export=download&id=" + data + "";
                 $das("outputText").value = outURL;
                 $das("outputText").select();
             } else {
