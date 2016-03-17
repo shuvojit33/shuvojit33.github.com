@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Live Testing Tool For Blogger Dynamic Slider - shuvojitdas.com</title>
+    <meta name="description" content="Live Testing Tool For Blogger Dynamic Slider">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/demo-css.css" rel="stylesheet" type="text/css">
+    <!--  BloggerDynamicSlider Required Scripts & CSS-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bdslider.css">
+    <script type="text/javascript" src="js/jquery.bdslider.min.js"></script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="tool-input-wrapper">
+            <div id="tool-input">
+                <div id="url-cont">
+                    <p>Enter Your Blog Homepage URL:</p>
+                    <input id="url" type="url" placeholder="e.x: http://labelpost.blogspot.com/" value="http://labelpost.blogspot.com/" />
+                </div>
+                <div id="left-col">
+                    <div id="label-cont">
+                        <p>Label (Optional):</p>
+                        <input id="label" type="text" placeholder="e.x: Hot Post" />
+                    </div>
+                    <div id="max-cont">
+                        <p>Max Slide Items:</p>
+                        <input id="maxItem" type="text" value="7" />
+                    </div>
+                </div>
+                <div id="right-col">
+                    <div id="width-cont">
+                        <p>Width(px):</p>
+                        <input id="width" type="text" value="600" />
+                    </div>
+                    <div id="height-cont">
+                        <p>Height(px):</p>
+                        <input id="height" type="text" value="320" />
+                    </div>
+                </div>
+                <div id="button">
+                    <button id="submit-button" type="button" name="">Generate</button>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var inputURL = 'http://labelpost.blogspot.com/';
+                var label = '';
+                var maxItem = 7;
+                var width = 600;
+                var height = 320;
+
+
+                $('#submit-button').click(function() {
+
+                    $("#loading").fadeIn();
+
+                    $("#slider1").empty();
+                    inputURL = $('#url').val();
+                    label = $('#label').val();
+                    maxItem = $('#maxItem').val();
+                    width = $('#width').val();
+                    height = $('#height').val();
+
+                    console.log(inputURL);
+                    console.log(label);
+                    console.log(maxItem);
+                    console.log(width);
+                    console.log(height);
+
+                    console.log(runTheSlider.toString());
+
+                    runTheSlider();
+                });
+
+                function runTheSlider() {
+                    $("#slider1").BloggerDynamicSlider({
+                        blogURL: inputURL,
+                        labelName: label,
+                        maxItem: maxItem,
+                        imageWidth: width,
+                        imageHeight: height
+                    });
+                }
+                window.onload = runTheSlider;
+
+            });
+            </script>
+        </div>
+        <!-- .fluid_container -->
+        <div id="right-container">
+            <h1> <a href="/bdslider-live-testing-tool/">Live Testing Tool For Blogger Dynamic Slider</a></h1>
+            <div id="loading" style="display: none">
+                <h2>Loading...</h2></div>
+            <div id="slider1"></div>
+            <br/>
+            <div id="footer">
+                <div class="btn"><a href="http://imagesliderforblogger.blogspot.com/2016/02/blogger-dynamic-slider-by-label-or-recent-posts.html" target="_blank">Add This Slider On Your Blogger Blog</a></div>
+                <div id="foot-credit">
+                    <p>&#169;<a href='http://shuvojitdas.com/'>shuvojitdas.com</a> - <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
