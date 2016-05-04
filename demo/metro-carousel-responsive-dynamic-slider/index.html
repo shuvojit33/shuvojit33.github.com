@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Metro Carousel Slider (Responsive & Dynamic)</title>
+    <style type="text/css">
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <!--  carousel scripts-->
+    <link rel='stylesheet' href='style.css' type='text/css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' type='text/css' />
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <script type='text/javascript' src='jquery.caroufredsel-6.2.1.min.js'></script>
+    <script type='text/javascript' src='jquery.touchSwipe.min.js'></script>
+    <script type='text/javascript' src='jquery.carouselmetroslider.js'></script>
+    <div id="slider1"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#slider1").CarouselMetroSlider({
+            maxItem: 10,
+            blogURL: "http://labelpost.blogspot.com",
+            labelName: "Demo Photo", // Show posts from specific Label. Specify a 'Label', or leave it empty to fetch from all recent posts
+            bigImageWidth: 640, // Image width in px value
+            bigImageHeight: 360, // Image height in px value
+            smallImageWidth: 320, // Image width in px value
+            smallImageHeight: 180, // Image height in px value
+            bigSmallRatio: 7, // thats mean big:small || 1:6
+        });
+    });
+    </script>
+    <!--
+    <script type='text/javascript' src='caroufredsel-template.min.js'></script>
+    -->
+</body>
+
+</html>

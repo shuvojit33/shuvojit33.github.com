@@ -1,0 +1,392 @@
+/* ---------------------------
+    BASIC HTML
+------------------------------ */
+
+#head-carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*video item*/
+
+.video-item {
+    margin-bottom: 10px;
+}
+
+.video-item h2,
+.video-item h2 a {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #5f5f5f;
+    margin: 0 0 10px 0;
+}
+
+.video-item h2 a:hover {}
+
+.video-item h2 a:hover,
+.video-item h3 a:hover {
+    text-decoration: none;
+    color: #4141a0;
+}
+
+.video-item .item-thumbnail {
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.video-item .item-thumbnail > a {
+    display: block;
+}
+
+
+/*video thumb sizing*/
+
+.style-grid-2 .col-md-3:nth-child(odd),
+.style-list-2 .col-md-3:nth-child(odd) {
+    clear: both;
+}
+
+.video-item .item-thumbnail img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.video-item .item-thumbnail .rating-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 8px;
+}
+
+.video-item .item-thumbnail .link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.video-item .item-thumbnail .link-overlay:before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -18px;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    font: 14px/40px 'FontAwesome';
+    transform: scale(0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, .75);
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .video-item .item-thumbnail:hover .link-overlay {
+        background: rgba(20, 22, 23, 0.75);
+        text-decoration: none;
+    }
+    .video-item .item-thumbnail:hover .link-overlay:before {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        text-decoration: none;
+    }
+}
+
+.video-item .item-meta {
+    color: #c6c6c6;
+}
+
+.video-item .item-meta [class^="fa-"],
+.video-item .item-meta [class*=" fa-"] {
+    font-size: 14px;
+}
+
+.video-item .item-meta span {
+    line-height: 21px;
+    margin-right: 20px;
+}
+
+.video-item .item-meta span > i {
+    margin-right: 2px;
+}
+
+
+/*fix ratio*/
+
+.video-listing:not(.style-list-1) .video-item .item-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.video-listing:not(.style-list-1) .video-item .item-thumbnail img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.smart-item {
+    float: left;
+}
+
+.smart-item.it-row .row .col-md-3 {
+    margin-bottom: 17px
+}
+
+.smart-item.it-row .row .col-md-3:last-child {
+    margin-bottom: 0
+}
+
+.smart-item.it-row > .row > .col-md-6 {
+    margin-bottom: 20px
+}
+
+
+/*big carousel*/
+
+#head-carousel {
+    background: #000;
+    color: #fff;
+}
+
+#head-carousel .container {
+    padding-top: 0;
+}
+
+#head-carousel .video-item {
+    float: left;
+    margin: 0 1px 0 0;
+    width: 520px;
+    height: 293px;
+    opacity: .5;
+    transition: all .3s ease-in .1s;
+}
+
+#head-carousel .current-carousel-item2 {
+    opacity: 1;
+}
+
+#head-carousel #big-carousel .video-item .item-thumbnail img {
+    opacity: .85;
+}
+
+#head-carousel .is-carousel {
+    position: relative;
+    margin: 0px;
+    height: 293px;
+    overflow: hidden;
+}
+
+#head-carousel .is-carousel .carousel-button {
+    position: absolute;
+    opacity: 0;
+    transition: all .2s ease;
+    left: 40px;
+    right: 40px;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 3;
+    height: 0;
+}
+
+#head-carousel .is-carousel .carousel-content {
+    position: absolute;
+    z-index: 0;
+    height: 382px;
+    overflow: hidden;
+}
+
+#head-carousel .is-carousel .carousel-button a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+#head-carousel .is-carousel .carousel-button a:hover {
+    text-decoration: none;
+}
+
+#head-carousel .is-carousel .carousel-button .prev {
+    float: left;
+}
+
+#head-carousel .is-carousel .carousel-button .next {
+    float: right;
+}
+
+#head-carousel .shadow-left {
+    position: absolute;
+    opacity: 0;
+    transition: all .2s ease;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+}
+
+#head-carousel .shadow-right {
+    position: absolute;
+    opacity: 0;
+    transition: all .2s ease;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* W3C */
+}
+
+#head-carousel:hover #big-carousel .carousel-button,
+#head-carousel #big-carousel:hover .shadow-right,
+#head-carousel:hover #big-carousel .shadow-left {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    #head-carousel .shadow-left,
+    #head-carousel .shadow-right {
+        width: 60px;
+    }
+    #head-carousel .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    #head-carousel .shadow-left,
+    #head-carousel .shadow-right {
+        width: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    #head-carousel .shadow-left,
+    #head-carousel .shadow-right {
+        width: 0px;
+    }
+}
+
+
+/*metro header*/
+
+#head-carousel #metro-carousel .video-item {
+    opacity: 1;
+    width: auto;
+}
+
+#head-carousel #metro-carousel .video-item > .video-item {
+    width: 260px;
+    height: 146px;
+    margin: 0;
+    clear: both;
+}
+
+#head-carousel #metro-carousel .video-item > .video-item:first-child {
+    margin-bottom: 1px;
+}
+
+#head-carousel #metro-carousel.is-carousel .carousel-button,
+#head-carousel #big-carousel.is-carousel .carousel-button {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    margin-top: 0;
+    z-index: 2;
+    height: 0;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+#head-carousel #metro-carousel.is-carousel:hover .carousel-button,
+#head-carousel #big-carousel.is-carousel:hover .carousel-button {
+    opacity: 1;
+}
+
+#head-carousel #metro-carousel.is-carousel .carousel-button a,
+#head-carousel #big-carousel.is-carousel .carousel-button a {
+    border: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 293px;
+    line-height: 293px;
+    color: inherit;
+}
+
+#head-carousel #metro-carousel.is-carousel .carousel-button a:hover,
+#head-carousel #big-carousel.is-carousel .carousel-button a:hover {
+    color: #f9c73d;
+}
+
+
+/* custom */
+
+#head-carousel .is-carousel {
+    height: 360px;
+}
+
+#head-carousel .video-item {
+    width: 640px;
+    height: 360px;
+}
+
+#head-carousel #metro-carousel .video-item .item-thumbnail img {
+    width: 640px;
+}
+
+#head-carousel #metro-carousel .video-item > .video-item {
+    width: 320px;
+    height: 180px;
+}
+
+#head-carousel #metro-carousel.is-carousel .carousel-button a,
+#head-carousel #big-carousel.is-carousel .carousel-button a {
+    height: 360px;
+    line-height: 360px;
+}
