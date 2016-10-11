@@ -9,9 +9,9 @@
 var thumbSummOptions = {
     showThumbnails: true, //Show Thumbnail
     summaryLength: 400, // Summary length
-    thumbWidth: 200, // Thumbnail/Image Width (px)
-    thumbHeight: 200, // Thumbnail/Image Height (px)
-    readMoreText: "Continue.."
+    thumbWidth: 525, // Thumbnail/Image Width (px)
+    thumbHeight: 640, // Thumbnail/Image Height (px)
+    readMoreText: "Read more »"
 };
 
 
