@@ -235,14 +235,6 @@ jQuery(window).scroll(function () {
     }
 });
 
-// config pagination
-var pageNavConfig = {
-    perPage: 12, // number of posts per page
-    maxPages: 6,
-    nextText: '<i class="i-right-open-mini"></i>',
-    previousText: '<i class="i-left-open-mini"></i>',
-    blogURL: "/"
-};
 
 /**
  *  blogger-pagination.js v1.0.0
