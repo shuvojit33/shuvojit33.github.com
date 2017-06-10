@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+    /*+++++++++++++++++++++++++++++++++++++++++++++
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    ++++++++ Slider CSS +++++++++++++++++++++++++++
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    +++++++++++++++++++++++++++++++++++++++++++++++*/
+    
+    #das_slider_sidebar {
+        max-width: 340px;
+    }
+    
+    #das_slider {
+        max-width: 100%;
+    }
+    
+    #das_slider_container {
+        overflow: hidden;
+    }
+    
+    .das_slider_item {
+        position: relative;
+    }
+    
+    .das_overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .das_overlay .text_button {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    
+    .das_loading_wrap.das_overlay {
+        z-index: 999;
+    }
+    
+    .das_overlay a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .overlay_table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .overlay_tableCell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .das_overlay,
+    .das_overlay span.h2,
+    .das_overlay .das_more {
+        font-family: 'Josefin Sans', sans-serif;
+        /*font-family: Century Gothic, Arial, serif;*/
+    }
+    
+    .overlay_inner {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+    
+    .das_overlay .cat {
+        display: block;
+        margin: 0 3px 24px;
+        color: #fff;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 2px;
+    }
+    
+    .das_overlay span.h2 {
+        color: #fff;
+        font-size: 48px;
+        line-height: 1.1em;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+        display: block;
+        max-width: 620px;
+        /*letter-spacing: 3px !important;*/
+    }
+    
+    .isfb-title-divider {
+        border-top: 2px solid;
+        display: block;
+        max-width: 48px;
+        margin: 0 auto 26px;
+        color: #fff;
+    }
+    
+    .das_more {
+        color: #fff;
+        padding: 10px 12px 10px 13px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        display: inline-block;
+        -o-transition: .25s;
+        -moz-transition: .25s;
+        -webkit-transition: .25s;
+        transition: .25s;
+        font-weight: 400;
+    }
+    
+    .das_more:hover {
+        background: rgba(255, 255, 255, 0.13);
+        /*border-color: rgba(255, 255, 255, 0.8);*/
+    }
+    
+    .overlay_box {
+        display: inline-block;
+        padding: 30px 32px;
+    }
+    /*slick style*/
+    
+    span.arrow {
+        padding: 0;
+        z-index: 999999;
+        width: 40px;
+        height: 40px;
+    }
+    
+    span.arrow svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    span.arrow svg polyline {
+        stroke: #ffffff;
+        stroke-width: 3px;
+    }
+    
+    span.arrow {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin-top: -20px;
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+        opacity: 0;
+        /*margin-top: -20px;*/
+        transition: all 200ms ease-in-out;
+        /*transition: 50ms opacity linear;*/
+    }
+    
+    span.arrow.thin-prev {
+        left: -30px;
+    }
+    
+    span.arrow.thin-next {
+        right: -30px;
+    }
+    
+    .slick-slider:hover > span.arrow.thin-prev {
+        left: 15px;
+        opacity: 0.6;
+    }
+    
+    .slick-slider:hover > span.arrow.thin-next {
+        right: 15px;
+        opacity: 0.6;
+    }
+    
+    span.arrow:hover {
+        opacity: 1 !important;
+    }
+    
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        /* https://github.com/kenwheeler/slick/pull/2230/files */
+        -webkit-perspective: 1000px;
+    }
+    
+    .das_overlay.text_button {
+        transition: opacity 0.5s 0s;
+    }
+    
+    .animated {
+        opacity: 0;
+        -webkit-animation-duration: .4s;
+        -moz-animation-duration: .4s;
+        -o-animation-duration: .4s;
+        animation-duration: .4s;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+        -o-animation-delay: 0;
+        animation-delay: 0;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-out;
+        -moz-animation-timing-function: ease-out;
+        -o-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    
+    @-webkit-keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -15%, 0);
+            transform: translate3d(0, -15%, 0)
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none
+        }
+    }
+    
+    @-moz-keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -moz-transform: translate3d(0, -15%, 0);
+            transform: translate3d(0, -15%, 0)
+        }
+        to {
+            opacity: 1;
+            -moz-transform: none;
+            transform: none
+        }
+    }
+    
+    @-o-keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -15%, 0)
+        }
+        to {
+            opacity: 1;
+            -o-transform: none;
+            transform: none
+        }
+    }
+    
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -15%, 0);
+            -moz-transform: translate3d(0, -15%, 0);
+            transform: translate3d(0, -15%, 0)
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -o-transform: none;
+            transform: none
+        }
+    }
+    
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        -moz-animation-name: fadeInDown;
+        -o-animation-name: fadeInDown;
+        animation-name: fadeInDown
+    }
+    
+    .cssloader {
+        position: relative;
+        margin: 0 auto;
+        width: 40px
+    }
+    
+    .cssloader:before {
+        content: '';
+        display: block;
+        padding-top: 100%
+    }
+    
+    .cssloader .circular {
+        -webkit-animation: rotate 2s linear infinite;
+        animation: rotate 2s linear infinite;
+        height: 100%;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto
+    }
+    
+    .cssloader .path {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+        animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+        stroke-linecap: round
+    }
+    
+    @-webkit-keyframes rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+        }
+    }
+    
+    @keyframes rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+        }
+    }
+    
+    @-webkit-keyframes dash {
+        0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0
+        }
+        50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35px
+        }
+        100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124px
+        }
+    }
+    
+    @keyframes dash {
+        0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0
+        }
+        50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35px
+        }
+        100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124px
+        }
+    }
+    
+    @-webkit-keyframes color {
+        0%,
+        100% {
+            stroke: #fff
+        }
+    }
+    
+    @keyframes color {
+        0%,
+        100% {
+            stroke: #fff
+        }
+    }
+    
+    .das_sc {
+        overflow: hidden;
+    }
+    
+    #das_slider_sidebar .pi-canvas {
+        padding-bottom: 66.47058823529412%;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .das_overlay {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .das_overlay span.h2 {
+            font-size: 32px;
+            max-width: 100%;
+        }
+        .overlay_box {
+            padding: 0;
+        }
+        .overlay_inner {
+            max-width: 95%;
+        }
+        span.arrow {
+            display: none !important;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .das_overlay span.h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .das_more {
+            padding: 7px;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .das_more {
+            font-size: 14px;
+        }
+        .das_overlay span.h2 {
+            margin-bottom: 24px;
+        }
+        .overlay_box.dark {
+            background: rgba(33, 33, 33, 0.3);
+        }
+        .overlay_box.light {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .overlay_box.none {
+            background: transparent;
+        }
+    }
+    /*custom style*/
+    
+    @media only screen and (min-width: 768px) {
+        .das_more {
+            font-size: 12px;
+        }
+        .overlay_box {
+            padding: 30px 24px;
+        }
+        .das_overlay span.h2 {
+            font-size: 26px;
+        }
+        .overlay_box.light span.h2 {
+            color: #000;
+            line-height: 1.3em;
+        }
+        .overlay_box.light a.das_more {
+            color: #000;
+            border-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 10px 8px 11px;
+        }
+        .overlay_box.light a.das_more:hover {
+            /*border-color: rgba(0, 0, 0, 0.8);*/
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .overlay_box.light {
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .overlay_box.dark {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .das_overlay span.h2 {
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/revStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/progressive-image.css" />
+    <script type="text/javascript" src="js/progressive.js"></script>
+    <script type="text/javascript" src="js/jquery.bdslider.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+</head>
+
+<body style="background:#120e0b;max-width: 440px;margin: 20px auto !important;">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <div class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Collapsible Group Item #1</a>
+                </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+                        <tbody>
+                            <tr>
+                                <td class="first columns-cell">
+                                    <div class="sidebar section" id="sidebar-right-2-1">
+                                        <div class="widget HTML" data-version="1" id="HTML2">
+                                            <h2 class="title">Lederfarben:</h2>
+                                            <div class="widget-content">
+                                                <ul>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/1%20-%20Lederfarben%20gr%C3%BCn?max-results=50">Lederfarben grün</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/2%20-%20Lederfarben%20oliv%20%26%20oliv-braun?max-results=50">Lederfarben oliv &amp; oliv-braun</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/3%20-%20Lederfarben%20blau?max-results=50">Lederfarben blau</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/4%20-%20Lederfarben%20rot?max-results=50">Lederfarben rot</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/5%20-%20Lederfarben%20gelb?max-results=50">Lederfarben gelb</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/6%20-%20Lederfarben%20braun?max-results=50">Lederfarben braun</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/7%20-%20Lederfarben%20grau?max-results=50">Lederfarben grau</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/8%20-%20Lederfarben%20schwarz?max-results=50">Lederfarben schwarz</a></li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/9%20-%20alle%20Leder?max-results=50">alle Leder</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="columns-cell">
+                                    <div class="sidebar section" id="sidebar-right-2-2">
+                                        <div class="widget HTML" data-version="1" id="HTML3">
+                                            <h2 class="title">Modelle:</h2>
+                                            <div class="widget-content">
+                                                <ul>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/a%20-%20open%20stitch">open stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/b%20-%20closed%20stitch">closed stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/c%20-%20cross%20stitch">cross stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/d%20-%20lug%20stitch%20*neu*">lug stitch *neu*</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/e%20-%20half%20circle">half circle</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/f%20-%20pilot">pilot</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/g%20-%20box">box</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/h%20-%20x-boxed">x-boxed</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/i%20-%20marine">marine</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/j%20-%20black%20forest">black forest</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="das_sc">
+                        <div class="dasSlider" id="das_slider_sidebar_1" style="max-height: 226px;">
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <div class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</a>
+                </div>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+                        <tbody>
+                            <tr>
+                                <td class="first columns-cell">
+                                    <div class="sidebar section" id="sidebar-right-2-1">
+                                        <div class="widget HTML" data-version="1" id="HTML2">
+                                            <h2 class="title">Lederfarben:</h2>
+                                            <div class="widget-content">
+                                                <ul>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/1%20-%20Lederfarben%20gr%C3%BCn?max-results=50">Lederfarben grün</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/2%20-%20Lederfarben%20oliv%20%26%20oliv-braun?max-results=50">Lederfarben oliv &amp; oliv-braun</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/3%20-%20Lederfarben%20blau?max-results=50">Lederfarben blau</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/4%20-%20Lederfarben%20rot?max-results=50">Lederfarben rot</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/5%20-%20Lederfarben%20gelb?max-results=50">Lederfarben gelb</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/6%20-%20Lederfarben%20braun?max-results=50">Lederfarben braun</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/7%20-%20Lederfarben%20grau?max-results=50">Lederfarben grau</a>
+                                                    </li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/8%20-%20Lederfarben%20schwarz?max-results=50">Lederfarben schwarz</a></li>
+                                                    <li><a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/9%20-%20alle%20Leder?max-results=50">alle Leder</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="columns-cell">
+                                    <div class="sidebar section" id="sidebar-right-2-2">
+                                        <div class="widget HTML" data-version="1" id="HTML3">
+                                            <h2 class="title">Modelle:</h2>
+                                            <div class="widget-content">
+                                                <ul>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/a%20-%20open%20stitch">open stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/b%20-%20closed%20stitch">closed stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/c%20-%20cross%20stitch">cross stitch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/d%20-%20lug%20stitch%20*neu*">lug stitch *neu*</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/e%20-%20half%20circle">half circle</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/f%20-%20pilot">pilot</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/g%20-%20box">box</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/h%20-%20x-boxed">x-boxed</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/i%20-%20marine">marine</a>
+                                                    </li>
+                                                    <li>
+                                                        <a dir="ltr" href="http://www.greenpilot-watchstraps.de/search/label/j%20-%20black%20forest">black forest</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="das_sc">
+                        <div class="dasSlider" id="das_slider_sidebar_2" style="max-height: 226px;">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <div class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</a>
+                </div>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

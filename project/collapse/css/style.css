@@ -1,0 +1,27 @@
+.loading-box {
+    /* position: absolute; */
+    width: 100%;
+    padding-bottom: 66.47058823529412%;
+    overflow: hidden;
+}
+
+.loading-box:before {
+    content: "Loading...";
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 33.23529411764706%;
+    padding-bottom: 33.23529411764706%;
+    display: block;
+    /* overflow: hidden; */
+    text-align: center;
+    /* vertical-align: middle; */
+    background: #ddd;
+    line-height: 0;
+}
+
+.das_sc {
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
