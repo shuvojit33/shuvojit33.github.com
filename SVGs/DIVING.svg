@@ -6,12 +6,12 @@
 	 xml:space="preserve">
 <g>
 	<defs>
-		<rect id="SVGID_5_" x="-135.94" y="-69.452" width="500" height="300"/>
+		<rect id="SVGID_1_" x="-135.94" y="-69.452" width="500" height="300"/>
 	</defs>
-	<clipPath id="SVGID_1_">
-		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
-	<path clip-path="url(#SVGID_1_)" fill="none" stroke="#BEE37B" stroke-width="2.081" stroke-miterlimit="10" d="M28.554,146.188
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#BEE37B" stroke-width="2.081" stroke-miterlimit="10" d="M28.554,146.188
 		c25.473,9.518,54.588,14.907,85.508,14.907c30.918,0,60.033-5.39,85.506-14.907"/>
 </g>
 <g>
@@ -52,14 +52,14 @@
 </g>
 <g>
 	<defs>
-		<rect id="SVGID_7_" x="-135.94" y="-69.452" width="500" height="300"/>
+		<rect id="SVGID_3_" x="-135.94" y="-69.452" width="500" height="300"/>
 	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
 	</clipPath>
-	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#BEE37B" stroke-width="2.081" stroke-miterlimit="10" d="M46.035,111.885
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#BEE37B" stroke-width="2.081" stroke-miterlimit="10" d="M46.035,111.885
 		c20.811,7.18,44.183,11.057,68.026,11.057c23.842,0,47.213-3.877,68.023-11.057"/>
-	<path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#BEE37B" d="M115.753,58.804
+	<path clip-path="url(#SVGID_4_)" fill-rule="evenodd" clip-rule="evenodd" fill="#BEE37B" d="M115.753,58.804
 		c-1.246-2.385-7.723-14.649-7.723-14.649s1.426-0.423,4.737-1.326c3.312-0.909,8.677-3.556,10.003-3.814
 		c1.324-0.258,1.16-0.592,2.387-1.111c1.225-0.523,6.525-2.707,7.256-3.399c0.734-0.69,2.594-2.728,5.41-4.068
 		c2.818-1.339,23.676-7.966,23.676-7.966s1.285,0.67,2.775,0.345c1.488-0.32,6.717-1.052,8.432-0.942
