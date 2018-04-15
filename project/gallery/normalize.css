@@ -1,0 +1,319 @@
+/*--------------------------------------------------------------
+*** Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+html {
+  font-size: 62.5%; /* 10px */
+  overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+  background: #f0f0f0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+caption,
+th,
+td {
+  text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/*--------------------------------------------------------------
+*** Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.7778;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 1.6;
+  margin-bottom: 0.8em;
+}
+h2 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.3333;
+  margin-bottom: 1.3333em;
+}
+h5,
+h6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.7778;
+  margin-bottom: 1.7778em;
+  text-transform: uppercase;
+}
+p {
+  margin-bottom: 1.7778em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+blockquote {
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 40px;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.3em;
+  margin-bottom: 0.8em;
+  position: relative;
+}
+blockquote cite {
+  display: block;
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-style: normal;
+  letter-spacing: .03em;
+  line-height: 2.2857;
+  margin-top: 1.14285em;
+  text-transform: uppercase;
+}
+blockquote:before {
+  display: block;
+  color: #f7f7f7;
+  content: "\201C";
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 250px;
+  font-size: 25rem;
+  position: absolute;
+  top: 45px;
+  left: -50px;
+  z-index: -1;
+}
+address {
+  margin: 0 0 1.7778em;
+}
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2.2857;
+  margin-bottom: 2.2857em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+big {
+  font-size: 125%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*--------------------------------------------------------------
+*** Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+body {
+  background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.7778em;
+}
+ul,
+ol {
+  margin: 0 0 1.7778em 1em;
+  list-style-position: outside;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.7778em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+table {
+  width: 100%;
+  margin: 0 0 1.7778em;
+}
+td {
+  padding: 3px 5px;
+  border-bottom: 1px solid #222;
+}
+th {
+  font-weight: bold;
+  padding: 10px 5px 5px;
+  border-bottom: 4px solid #222;
+}
+
+/*--------------------------------------------------------------
+*** Links
+--------------------------------------------------------------*/
+a {
+  color: #664199;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #664199;
+}
+a:focus {
+  outline: 0;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+.entry-content a,
+.page-content a {
+  border-bottom: 2px solid transparent;
+}
+.entry-content a:hover,
+.page-content a:hover {
+  border-bottom: 2px solid #664199;
+}
+.entry-content .read-more:hover {
+  border-bottom-color: transparent;
+}
+a img {
+  border: 0;
+}
