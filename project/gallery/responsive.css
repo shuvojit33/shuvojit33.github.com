@@ -1,3 +1,16 @@
+@media (min-width: 1400px) {
+   .container {
+      max-width: 1440px;
+      margin: 0 auto;
+   }
+   .modal-content {
+      max-width: 1460px;
+   }
+   .mRight {
+    padding-top: 5%;
+}
+}
+
 @media (max-width: 900px) {
    .gallery .postTitle {
       top: 38%;
@@ -26,6 +39,9 @@
    footer {
       margin-top: 0;
    }
+   #GalleryThumbs {
+      display: none;
+   }
 }
 
 @media (max-width: 639px) {
@@ -47,10 +63,10 @@
    .quickviewButtonOpen #quickview {
       display: block;
    }
-   .gallery .item a:hover .meta {
+   .gallery .item .xbox:hover .meta {
       opacity: 1;
    }
-   .gallery .item a:hover .progressiveImage {
+   .gallery .item .xbox:hover .progressiveImage {
       opacity: 0.3;
    }
 }

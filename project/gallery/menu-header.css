@@ -6,7 +6,6 @@
 
 #catNav {
     text-align: left;
-    margin-top: 15px;
 }
 
 
@@ -30,7 +29,7 @@
 #catNav ul li span {
     padding: 3px 2px;
     color: #222;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -38,42 +37,19 @@
     display: block;
 }
 
-header {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-header h1 a {
-    color: #333;
-    font-style: italic;
-    font-weight: 400;
-    font-family: Playfair Display, serif;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-    line-height: 1;
-    font-size: 36px;
-}
-
-header h1 a:hover,
-header h1 a:focus {
-    color: #000;
-}
-
-#catNav {
-}
 
 #catNav ul li a {
     color: #999999;
     /* padding-bottom: 8px; */
     border-top: 2px solid transparent;
+    text-decoration: none;
 }
 
 #catNav ul li.active a,
 #catNav ul li a:hover,
 #catNav ul li span {
-    color: #2196F3;
-    /* border-top: 2px solid #2196F3; */
+    color: #bfdb7d;
+    /* border-top: 2px solid #bfdb7d; */
 }
 
 #category .inner {
@@ -85,3 +61,6 @@ header h1 a:focus {
     cursor: default;
 }
 
+nav#category {
+    margin-top: 15px;
+}
