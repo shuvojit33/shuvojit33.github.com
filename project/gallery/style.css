@@ -439,7 +439,7 @@ html.quickviewButtonOpen {
 .mRight {
    width: 40%;
    /* float: right; */
-   padding: 25px 30px 22px 30px;
+   padding: 25px 30px 0 30px;
    color: #262626;
    overflow-y: auto;
    /* right: 0; */
@@ -1067,4 +1067,7 @@ div#quickview.xxlOpened {
 
 #GalleryThumbs li.active .numTag {
    display: block;
+}
+.mReadMore {
+    padding-bottom: 22px;
 }
