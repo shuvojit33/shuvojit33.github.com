@@ -648,6 +648,7 @@ footer {
 .foot-1 a:hover,
 .foot-1 a:focus {
    color: #444444;
+   text-decoration: none;
 }
 
 .foot-2 li:last-child {
