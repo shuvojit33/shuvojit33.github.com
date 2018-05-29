@@ -58,7 +58,8 @@
             var blogURL = "https://greenpilot-gallery.blogspot.com/";
             var labelName = "Gallery";
             var startX = 0;
-            var limitX = 24;
+            var maxItems = 24;
+            var limitX = maxItems;
             $(document).ready(function() {
                function initGallery(ln) {
                   $("#gallery-container").BloggerGallery({
@@ -73,6 +74,8 @@
                initGallery(labelName);
 
                $("#category #catNav").on("click", "li a", function(e) {
+                  startX = 0;
+                  limitX=maxItems;
                   e.preventDefault();
 
                   $(this).closest("ul").find('li.active').removeClass('active');

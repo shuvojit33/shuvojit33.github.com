@@ -758,7 +758,7 @@ div#galleryLoading .spinner {
    font-size: 13px;
    cursor: pointer;
    font-weight: 500;
-   margin: 0px 2px;
+   margin: 0px 2px 8px 2px;
 }
 
 #gallerypagination li.active {
