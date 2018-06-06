@@ -12,7 +12,7 @@
    <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-   <script type="text/javascript" src='jquery.js'></script>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
    <script type="text/javascript" src='jquery.featured-post.js'></script>
    <script src="progressive-image.js"></script>
    <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -31,7 +31,7 @@
          <div class="inner">
             <div id="catNav">
                <ul>
-                  <li class="active"><a href="/search/label/Gallery">All</a></li>
+                  <li class="active"><a href="/search/label/Gallery">Alle</a></li>
                </ul>
             </div>
          </div>
@@ -60,6 +60,7 @@
             var startX = 0;
             var maxItems = 24;
             var limitX = maxItems;
+            var ToatlEntriesLength = false;
             $(document).ready(function() {
                function initGallery(ln) {
                   $("#gallery-container").BloggerGallery({
@@ -82,7 +83,7 @@
                   $(this).closest("li").addClass('active');
 
                   labelName = $(this).text();
-                  if (labelName == "All") {
+                  if (labelName == "Alle") {
                      labelName = "Gallery";
                   };
 
