@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>FTP Video Player - shuvojitdas.com</title>
+   <meta name="description" content="Live Testing Tool For Blogger Dynamic Slider">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="css/demo-css.css" rel="stylesheet" type="text/css">
+   <!--  BloggerDynamicSlider Required Scripts & CSS-->
+   <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+   <div id="page-wrapper">
+      <div id="tool-input-wrapper">
+         <div id="tool-input">
+            <div id="url-cont">
+               <p>Enter you FTP video URL:</p>
+               <input id="url" type="url" placeholder="Paste the video link here" />
+            </div>
+            <div id="button">
+               <button id="submit-button" type="button" name="">Play</button>
+            </div>
+         </div>
+         <script type="text/javascript">
+         $(document).ready(function() {
+            var inputURL = '';
+            // var label = '';
+            // var maxItem = 7;
+            // var width = 600;
+            // var height = 320;
+
+
+            $('#submit-button').click(function() {
+
+               // $("#loading").fadeIn();
+
+               var videoFile = $('#url').val();
+               $('#theVideo').attr('src', videoFile);
+               $("#divVideo video")[0].load();
+
+
+
+               // console.log(inputURL);
+               // console.log(label);
+               // console.log(maxItem);
+               // console.log(width);
+               // console.log(height);
+
+               // console.log(runTheSlider.toString());
+
+               // runTheSlider();
+            });
+
+
+         });
+         </script>
+      </div>
+      <!-- .fluid_container -->
+      <div id="right-container">
+         <video autoplay id="theVideo" controls src="">
+            Sorry, your browser doesn't support embedded videos.
+         </video>
+         <br/>
+         <div id="footer">
+            <div id="foot-credit">
+               <p>&#169; Shuvojit Das -
+                  <script>
+                  document.write(new Date().getFullYear())
+                  </script>. All Rights Reserved</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

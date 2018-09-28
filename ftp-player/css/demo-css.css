@@ -1,0 +1,272 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#page-wrapper {
+    height: 100%;
+    position: relative;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 16px;
+    background: url(images/bg.png) #FFF fixed;
+    color: #000;
+}
+
+.fluid_container {
+    margin: 10px auto 20px auto;
+    max-width: 900px;
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #333;
+    text-transform: capitalize;
+}
+
+h1 strong {
+    font-weight: 400;
+}
+
+h3,
+h4,
+#demos-nav {
+    text-align: center;
+}
+
+#demos-nav {
+    padding-top: 10px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.btn a {
+    color: #03A9F4;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2px 8px;
+    text-decoration: none;
+    /* margin-right: 14px; */
+    line-height: 1.5em;
+    border: 1px solid;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.btn a:hover,
+.btn a.active {
+    color: #E91E63;
+}
+
+.btn {
+    text-align: center;
+}
+
+#code-section {
+    display: none;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+#code-section h3 {
+    text-align: left;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+div#footer {
+    margin: 6em auto 0.2em auto;
+}
+
+#tool-input input {
+    /* width: 372px; */
+    /* height: 20px; */
+    padding: 2px 4px;
+}
+
+input#url {
+    width: 320px;
+    padding: 4px 4px;
+}
+
+div#tool-input p {
+    margin: 4px 0;
+}
+
+div#left-col {
+    margin: 0 !important;
+    float: left;
+}
+
+div#right-col {
+    margin: 0 !important;
+}
+
+div#tool-input p {
+    margin: 16px 0 4px 0;
+}
+
+div#left-col {
+    margin: 10px 2px 10px 0;
+    float: left;
+    width: 180px;
+    display: block;
+    overflow: hidden;
+}
+
+div#right-col {
+    margin: 10px 2px 10px 0;
+    overflow: hidden;
+}
+
+button#submit-button {
+    padding: 8px 20px;
+    margin: 30px auto;
+    font-size: 18px;
+    font-family: monospace;
+    color: #444;
+    cursor: pointer;
+}
+
+div#tool-input {
+    font-size: 14px;
+    width: 335px;
+    margin: 0 auto;
+}
+
+div#slider1 {
+    margin-top: 3em;
+}
+
+div#loading {
+    /* position: absolute; */
+    /* z-index: 9999; */
+    /* opacity: 0.8; */
+    /* width: 100%; */
+    /* min-height: 200px; */
+    /* display: table-cell; */
+}
+
+div#loading h2 {
+    text-align: center;
+    line-height: 4em;
+    /* opacity: 0.8; */
+    font-weight: 300;
+}
+
+#left-col input,
+#right-col input {
+    width: 140px;
+}
+
+div#url-cont {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+div#right-container h1 {
+    margin-top: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+div#right-container a {
+    text-decoration: none;
+    color: #444;
+}
+
+div#right-container a:hover {
+    color: #FF5722;
+}
+
+div#tool-input-wrapper {
+    background: #FFFFFF;
+    border-bottom: 2px solid #C5C5C5;
+    position: relative;
+    overflow: hidden;
+}
+
+div#right-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 15px 15px 2px 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+    div#right-container {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div#tool-input-wrapper {
+        padding: 3px 27px;
+        box-sizing: border-box;
+        position: fixed;
+        /* <-- fixes the left panel to prevent from scrolling */
+        top: 0;
+        left: 0;
+        width: 390px;
+        height: 100%;
+        box-shadow: 1px 0px 3px #aaa;
+    }
+    div#right-container {
+        /* display: block; */
+        overflow: hidden;
+        /* position: relative; */
+        margin: 0 0 0 390px !important;
+        padding: 10px 20px;
+        min-height: 100%;
+        /* <-- fixes the background-color issue when content grows */
+    }
+    div#tool-input {
+        margin-top: 40px;
+    }
+}
+
+div#foot-credit {
+    border-top: 1px solid #ccc;
+    margin-top: 3em;
+    text-align: center;
+}
+video#theVideo {
+    width: 100%;
+    max-width: 100%;
+}
+button#submit-button {
+    background: #333;
+    padding: 11px 20px;
+    margin: 6px auto 30px auto;
+    font-size: 18px;
+    line-height: 20px;
+    /* font-family: monospace; */
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
