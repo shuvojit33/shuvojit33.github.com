@@ -270,3 +270,12 @@ button#submit-button {
     text-transform: uppercase;
     font-weight: 300;
 }
+div#url-cont span {
+    font-size: 14px;
+    border: 1px solid #ddd;
+    line-height: 1em;
+    padding: 0px 7px 2px 7px;
+}
+div#url-cont a:hover {
+    background: #f1f1f1;
+}
