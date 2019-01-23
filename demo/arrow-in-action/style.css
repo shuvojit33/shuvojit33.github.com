@@ -12,7 +12,8 @@ div#infoBar .column:last-child {
    text-align: right;
 }
 
-#arrowSticker, #arrowStickerHidden {
+#arrowSticker,
+#arrowStickerHidden {
    background: url(arrow.png);
    width: 131px;
    height: 70px;
@@ -25,7 +26,8 @@ div#infoBar .column:last-child {
    /*transition: 200ms all linear;*/
 }
 
-#arrow-content, #arrow-content-Hidden {
+#arrow-content,
+#arrow-content-Hidden {
    color: #ffffff;
    /* padding: 5px; */
    margin-top: 30px;
@@ -61,63 +63,57 @@ span.separatorY {
    margin-bottom: 8px;
 }
 
-#arrow-content p, #arrow-content-Hidden p {
+#arrow-content p,
+#arrow-content-Hidden p {
    margin-top: 8px;
    margin-bottom: 0;
 }
 
-
 /*animation*/
-
 .animated.delay-2s {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+   -webkit-animation-delay: 2s;
+   animation-delay: 2s;
 }
-
-
 
 @keyframes myZoomOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;    
-    transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0); 
-  }
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0);
+   }
 }
 
-
-
-.myZoomOut {  
-  
-  animation-name: myZoomOut;
+.myZoomOut {
+   animation-name: myZoomOut;
 }
 
-.animated.myZoomOut, .animated.myZoomIn, .animated.popOut {
-
-
-    animation-duration: 200ms;
+.animated.myZoomOut,
+.animated.myZoomIn,
+.animated.popOut {
+   animation-duration: 200ms;
 }
 
-.animated.popOut {animation-duration: 1000ms;}
-
-
+.animated.popOut {
+   animation-duration: 1000ms;
+}
 
 @keyframes myZoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0); 
-  }
+   from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0);
+   }
 
-  100% {
-    opacity: 1;
-  }
+   100% {
+      opacity: 1;
+   }
 }
 
 .myZoomIn {
-  animation-name: myZoomIn;
+   animation-name: myZoomIn;
 }
-
 
 /*@keyframes popOut {
   from {
@@ -137,17 +133,17 @@ span.separatorY {
 .popOut {
   animation-name: popOut;
 }*/
-
 .hideY {
-opacity: 0;
-}
-.showY {
-    opacity: 1;
+   opacity: 0;
 }
 
+.showY {
+   opacity: 1;
+}
 
 #arrowStickerHidden.popOut {
-    width: 373px; 
-    height: 200px; 
-     margin-left: -40px;
-     z-index: 999999; }
+   width: 373px;
+   height: 200px;
+   margin-left: -40px;
+   z-index: 999999;
+}
