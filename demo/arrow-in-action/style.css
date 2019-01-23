@@ -1,0 +1,153 @@
+div#infoBar .column {
+   width: 33.3333333333%;
+   float: left;
+   text-align: center;
+}
+
+div#infoBar .column:first-child {
+   text-align: left;
+}
+
+div#infoBar .column:last-child {
+   text-align: right;
+}
+
+#arrowSticker, #arrowStickerHidden {
+   background: url(arrow.png);
+   width: 131px;
+   height: 70px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+   z-index: 9999;
+   margin-left: -14px;
+   margin-top: 10px;
+   /*transition: 200ms all linear;*/
+}
+
+#arrow-content, #arrow-content-Hidden {
+   color: #ffffff;
+   /* padding: 5px; */
+   margin-top: 30px;
+   margin-left: 17px;
+   font-size: 14px;
+   font-family: Oswald;
+}
+
+#arrowStickerHidden {
+   transition: 200ms;
+   /* width: 373px; */
+   /* height: 200px; */
+   /* margin-left: -40px; */
+   z-index: 999;
+   /* transform: scale3d(0.35, 0.35, 0.35) translate3d(-272px, -185px, 0); */
+}
+
+#arrow-content-Hidden {
+   margin-top: 59px;
+   margin-left: 22px;
+   font-family: "trebuchet ms new", "trebuchet ms", sans-serif;
+   color: #fff;
+   letter-spacing: 0.5px;
+}
+
+span.separator {
+   padding-bottom: 8px;
+   display: block;
+}
+
+span.separatorY {
+   display: block;
+   margin-bottom: 8px;
+}
+
+#arrow-content p, #arrow-content-Hidden p {
+   margin-top: 8px;
+   margin-bottom: 0;
+}
+
+
+/*animation*/
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
+
+@keyframes myZoomOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;    
+    transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0); 
+  }
+}
+
+
+
+.myZoomOut {  
+  
+  animation-name: myZoomOut;
+}
+
+.animated.myZoomOut, .animated.myZoomIn, .animated.popOut {
+
+
+    animation-duration: 200ms;
+}
+
+.animated.popOut {animation-duration: 1000ms;}
+
+
+
+@keyframes myZoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3) translate3d(-40px, 0, 0); 
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.myZoomIn {
+  animation-name: myZoomIn;
+}
+
+
+/*@keyframes popOut {
+  from {
+    opacity: 1;
+    transform: scale3d(0.35, 0.35, 0.35) translate3d(-272px, -185px, 0);
+  }
+
+32% {
+    transform: translate3d(-146px, -101px, 0px);
+}
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+}
+
+.popOut {
+  animation-name: popOut;
+}*/
+
+.hideY {
+opacity: 0;
+}
+.showY {
+    opacity: 1;
+}
+
+
+#arrowStickerHidden.popOut {
+    width: 373px; 
+    height: 200px; 
+     margin-left: -40px;
+     z-index: 999999; }
