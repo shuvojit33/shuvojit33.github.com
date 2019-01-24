@@ -1,15 +1,15 @@
-$("#arrowSticker").on({
+$("#arrowStickerWrap").on({
    mouseenter: function() {
       // $('#arrow-content').removeClass();
-      $('#arrow-content').addClass('animated myZoomOut');
+      $('#arrowTitle').removeClass().addClass('animated myZoomOut');
       // $('#arrow-content').removeClass();
 
       setTimeout(
          function() {
-            $("#arrowSticker").addClass('hideY');
-            $("#arrowStickerHidden").removeClass().addClass('showY');
-            $("#arrowStickerHidden").addClass('popOut');
-            $("#arrow-content-Hidden").addClass('fadeIn');
+            $("#arrowTitle").removeClass().addClass('hideY');
+            // $("#arrowContent").removeClass().addClass('showY');
+            $("#arrowStickerWrap").addClass('popOut');
+            $("#arrowContent").removeClass().addClass('animated myFadeIn');
          }, 200);
 
 
@@ -18,20 +18,21 @@ $("#arrowSticker").on({
    },
    mouseleave: function() {
       // $("#arrowSticker").removeClass();
-      //    $("#arrowStickerHidden").removeClass();        
-      //    $("#arrow-content-Hidden").removeClass();
+      //    $("#arrowStickerWrap").removeClass();        
+      //    $("#arrowContent").removeClass();
    }
 });
 
-$("#arrowStickerHidden").on({
+$("#arrowStickerWrap").on({
    mouseleave: function() {
-      $("#arrow-content-Hidden").removeClass('fadeIn');
-      $("#arrowStickerHidden").removeClass('popOut');
+      $("#arrowContent").removeClass().addClass('hideY');
+      $("#arrowStickerWrap").removeClass('popOut');
       setTimeout(
          function() {
-            $("#arrowStickerHidden").removeClass().addClass('hideY');
-            $("#arrowSticker").removeClass();
-            $('#arrow-content').removeClass();
+            $('#arrowTitle').removeClass().addClass('animated myZoomIn');
+      //       $("#arrowStickerWrap").removeClass().addClass('hideY');
+      //       $("#arrowSticker").removeClass();
+      //       $('#arrow-content').removeClass();
          }, 200);
 
 

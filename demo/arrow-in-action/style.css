@@ -12,8 +12,7 @@ div#infoBar .column:last-child {
    text-align: right;
 }
 
-#arrowSticker,
-#arrowStickerHidden {
+#arrowStickerWrap {
    background: url(arrow.png);
    width: 131px;
    height: 70px;
@@ -24,33 +23,35 @@ div#infoBar .column:last-child {
    margin-left: -14px;
    margin-top: 10px;
    /*transition: 200ms all linear;*/
+   
 }
 
-#arrow-content,
-#arrow-content-Hidden {
+#arrowTitle,
+#arrowContent {
    color: #ffffff;
    /* padding: 5px; */
    margin-top: 30px;
-   margin-left: 17px;
+   margin-left: 16px;
    font-size: 14px;
-   font-family: Oswald;
+  
 }
 
-#arrowStickerHidden {
+#arrowStickerWrap {
    transition: 200ms;
-   /* width: 373px; */
-   /* height: 200px; */
-   /* margin-left: -40px; */
+ 
    z-index: 999;
-   /* transform: scale3d(0.35, 0.35, 0.35) translate3d(-272px, -185px, 0); */
+   
 }
 
-#arrow-content-Hidden {
-   margin-top: 59px;
-   margin-left: 22px;
+#arrowContent {
+   min-width: 340px;
+   /* position: absolute; */
+   margin-top: 16px;
+   margin-left: 21px;
    font-family: "trebuchet ms new", "trebuchet ms", sans-serif;
    color: #fff;
    letter-spacing: 0.5px;
+   z-index: 999999;
 }
 
 span.separator {
@@ -60,19 +61,37 @@ span.separator {
 
 span.separatorY {
    display: block;
-   margin-bottom: 8px;
+   margin-bottom: 14px;
 }
 
-#arrow-content p,
-#arrow-content-Hidden p {
-   margin-top: 8px;
+#arrowTitle p,
+#arrowContent p {
+   margin-top: 0;
    margin-bottom: 0;
+   text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0px;
 }
 
 /*animation*/
-.animated.delay-2s {
-   -webkit-animation-delay: 2s;
-   animation-delay: 2s;
+.animated.myZoomOut,
+.animated.myZoomIn,
+.animated.popOut {
+   animation-duration: 200ms;
+}
+
+.animated.myZoomIn {
+   animation-duration: 100ms;
+}
+
+.animated.myZoomOut {
+   /*animation-duration: 200ms;*/
+}
+
+.animated.popOut {
+   animation-duration: 1000ms;
+}
+
+.animated.myFadeIn {
+   animation-duration: 600ms;
 }
 
 @keyframes myZoomOut {
@@ -90,16 +109,6 @@ span.separatorY {
    animation-name: myZoomOut;
 }
 
-.animated.myZoomOut,
-.animated.myZoomIn,
-.animated.popOut {
-   animation-duration: 200ms;
-}
-
-.animated.popOut {
-   animation-duration: 1000ms;
-}
-
 @keyframes myZoomIn {
    from {
       opacity: 0;
@@ -115,35 +124,57 @@ span.separatorY {
    animation-name: myZoomIn;
 }
 
-/*@keyframes popOut {
-  from {
-    opacity: 1;
-    transform: scale3d(0.35, 0.35, 0.35) translate3d(-272px, -185px, 0);
-  }
+@keyframes myFadeIn {
+   from {
+      opacity: 0;
+   }
 
-32% {
-    transform: translate3d(-146px, -101px, 0px);
-}
-  100% {
-    opacity: 1;
-    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
-  }
+   to {
+      opacity: 1;
+   }
 }
 
-.popOut {
-  animation-name: popOut;
-}*/
+.myFadeIn {
+   animation-name: fadeIn;
+}
+
 .hideY {
    opacity: 0;
+   visibility: hidden;
+   z-index: 0;
 }
 
 .showY {
    opacity: 1;
 }
 
-#arrowStickerHidden.popOut {
+#arrowStickerWrap.popOut {
    width: 373px;
    height: 200px;
    margin-left: -40px;
    z-index: 999999;
+}
+
+.lcb {
+   display: inline-block;
+   width: 17px;
+   text-align: right;
+   padding-right: 8px;
+}
+
+div#arrowTitle {
+   font-weight: 400;
+   font-family: Oswald, Arial Narrow, sans-serif;
+   font-size: 14px;
+   /* cursor: pointer; */
+   /*transition: 100ms ease-in all;*/
+}
+
+div#arrowTitle p {
+   margin-bottom: 0;
+}
+
+.popOut div#arrowTitle {
+   opacity: 0;
+   visibility: hidden;
 }
