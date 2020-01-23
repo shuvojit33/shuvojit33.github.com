@@ -51,8 +51,8 @@ div#ls1-left {
 div#LP-section-1 {
    background-image: url(images/bg1.png);
    background-repeat: no-repeat;
-   background-size: initial;
-   /* background-position: top center; */
+   background-size: cover;
+   background-position: bottom left;
 }
 
 div#ls1-left p {
