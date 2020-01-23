@@ -1,0 +1,148 @@
+.lp-container {
+   max-width: 1326px;
+   margin: 0 auto;
+}
+
+.lp-inner {
+   padding: 20px;
+}
+
+div#LP-section-1 .lp-inner {
+   padding-top: 10.3%;
+   padding-left: 9.3%;
+}
+
+#customLanding,
+#customLanding p,
+#customLanding h1,
+#customLanding h2,
+#customLanding h3,
+#customLanding h4,
+#customLanding h5 {
+   color: #0e15a2;
+   font-family: Montserrat, Lato, sans-serif;
+}
+
+#customLanding h3 {
+   font-size: 41px;
+   font-weight: 700;
+   margin-bottom: 2px;
+}
+
+div#ls1-left {
+   padding-top: 45px;
+}
+
+#customLanding h2 {
+   font-size: 51px;
+   font-weight: 900;
+   margin-bottom: 9px;
+   color: #ffb064;
+}
+
+.sepx {
+   width: 77%;
+   height: 5px;
+   background: #ffffff;
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+div#LP-section-1 {
+   background-image: url(images/bg1.png);
+   background-repeat: no-repeat;
+   background-size: initial;
+   /* background-position: top center; */
+}
+
+div#ls1-left p {
+   max-width: 96%;
+   margin-bottom: 33px;
+   color: #fff;
+}
+
+#customLanding,
+#customLanding p {
+   font-size: 1.17rem;
+   line-height: 1.75em;
+}
+
+a.btnx-white.btnx {
+   color: #3640cb;
+   background: #f2f4ff;
+}
+
+.btnx {
+   font-weight: 700;
+   font-size: 28px;
+   padding: 19px 21px;
+   margin: 4px 0px;
+   display: inline-block;
+   border-radius: 10px;
+   margin-right: 12px;
+   letter-spacing: 0.4px;
+}
+
+a.btnx-orange.btnx {
+   background: #ff9762;
+   background: linear-gradient(118deg, rgba(255, 148, 98, 1) 0%, rgba(255, 176, 100, 1) 100%);
+   padding: 19px 43px;
+   color: #ffffff;
+}
+
+div#ls1-right p {
+   text-align: center;
+   margin-bottom: 0;
+   font-size: 20px;
+   font-weight: bold;
+   padding-left: 128px;
+   letter-spacing: 1px;
+   margin-top: 2px;
+   color: #fff;
+}
+
+div#ls1-right {
+   padding-left: 37px;
+}
+
+.text-center {
+   text-align: center;
+}
+
+div#LP-section-1 h3 {
+   color: #fff;
+}
+
+div#ls1-right img {
+   margin-top: -10px;
+}
+
+div#line1 {
+   background-image: url(images/dot1.png);
+   background-repeat: no-repeat;
+   background-size: initial;
+   height: 206px;
+   background-position: 306px 19px;
+}
+
+div#tired {
+   max-width: 1050px;
+   margin: 6px auto;
+}
+
+#customLanding div#tired h3 {
+   font-size: 51px;
+   letter-spacing: 1px;
+   line-height: 1;
+}
+
+#customLanding div#tired p {
+   font-size: 27px;
+   letter-spacing: 1px;
+   line-height: 1.2;
+   margin-top: 17px;
+}
+
+#customLanding div#tired h3 i {
+   color: #ff9462;
+}
