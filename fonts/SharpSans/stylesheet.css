@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Medium.eot');
+    src: url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Medium.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Medium.woff') format('woff'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Bold.eot');
+    src: url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Bold.woff') format('woff'),
+        url('https://dev.dascodes.com/fonts/SharpSans/SharpSansNo1-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
