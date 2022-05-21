@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Bold.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Bold.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Regular.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Regular.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold Italic'), local('ProximaNova-BoldIt'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-BoldIt.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-BoldIt.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Extrabld.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Extrabold Italic'), local('ProximaNova-ExtrabldIt'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-ExtrabldIt.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-ExtrabldIt.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-ExtrabldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-RegularIt.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-RegularIt.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold Italic'), local('ProximaNova-SemiboldIt'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-SemiboldIt.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-SemiboldIt.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Semibold.woff2') format('woff2'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Semibold.woff') format('woff'),
+        url('http://dev.dascodes.com/fonts/proxima-nova-2/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
