@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-Regular.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/proximanova3/ProximaNova-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
