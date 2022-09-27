@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Optima';
-    src: url('Optima.woff2') format('woff2'),
-        url('Optima.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/optima/Optima.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/optima/Optima.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Optima';
-    src: url('Optima-Italic.woff2') format('woff2'),
-        url('Optima-Italic.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/optima/Optima-Italic.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/optima/Optima-Italic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Optima';
-    src: url('Optima-Medium.woff2') format('woff2'),
-        url('Optima-Medium.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/optima/Optima-Medium.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/optima/Optima-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Optima';
-    src: url('Optima-Bold.woff2') format('woff2'),
-        url('Optima-Bold.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/optima/Optima-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/optima/Optima-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
