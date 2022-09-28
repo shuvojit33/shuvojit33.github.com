@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('https://dev.dascodes.com/fonts/Avenir-Next-LT/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Avenir-Next-LT/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('https://dev.dascodes.com/fonts/Avenir-Next-LT/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Avenir-Next-LT/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
