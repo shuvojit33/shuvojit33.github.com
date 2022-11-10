@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'GT Super Display Trial';
-    src: url('GTSuperDisplayTrial-Regular.woff2') format('woff2'),
-        url('GTSuperDisplayTrial-Regular.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/GT%20Super%20Display/GTSuperDisplayTrial-Regular.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/GT%20Super%20Display/GTSuperDisplayTrial-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'GT Super Display Trial';
-    src: url('GTSuperDisplayTrial-Medium.woff2') format('woff2'),
-        url('GTSuperDisplayTrial-Medium.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/GT%20Super%20Display/GTSuperDisplayTrial-Medium.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/GT%20Super%20Display/GTSuperDisplayTrial-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
