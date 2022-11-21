@@ -16,3 +16,21 @@
     font-display: swap;
 }
 
+h3.modal-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.65;
+    text-transform: uppercase;
+}
+
+#klaviyo-bis-modal, #klaviyo-bis-modal p {
+    text-align: center;
+}
+
+#klaviyo-bis-modal button.btn {
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+
