@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'NOIR et BLANC';
+    src: url('NOIRetBLANC-Regular.woff2') format('woff2'),
+        url('NOIRetBLANC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('AvenirLTStd-Book.woff2') format('woff2'),
+        url('AvenirLTStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
