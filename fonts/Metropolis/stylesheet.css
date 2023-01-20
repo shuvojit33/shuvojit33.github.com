@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Metropolis';
-    src: url('Metropolis-Medium.woff2') format('woff2'),
-        url('Metropolis-Medium.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Medium.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('Metropolis-Bold.woff2') format('woff2'),
-        url('Metropolis-Bold.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,19 +18,18 @@
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('Metropolis-Regular.woff2') format('woff2'),
-        url('Metropolis-Regular.woff') format('woff');
+    src: url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis Semi';
-    src: url('Metropolis-SemiBold.woff2') format('woff2'),
-        url('Metropolis-SemiBold.woff') format('woff');
+    font-family: 'Metropolis';
+    src: url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
-
