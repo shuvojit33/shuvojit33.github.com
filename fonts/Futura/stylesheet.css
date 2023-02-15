@@ -1,0 +1,42 @@
+
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), local('Futura Light BT'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Light.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), local('Futura Book BT'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Book.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), local('Futura Medium BT'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Medium.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Futura/FuturaBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), local('Futura Bold'),
+        url('https://dev.dascodes.com/fonts/Futura/Futura-Bold.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/Futura/Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
