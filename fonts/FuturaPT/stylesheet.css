@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('FuturaPTMedium.woff2') format('woff2'),
+        url('FuturaPTMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('FuturaPTBook.woff2') format('woff2'),
+        url('FuturaPTBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
