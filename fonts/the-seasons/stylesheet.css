@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-LtIt.woff2') format('woff2'),
+        url('TheSeasons-LtIt.woff') format('woff'),
+        url('TheSeasons-LtIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-It.woff2') format('woff2'),
+        url('TheSeasons-It.woff') format('woff'),
+        url('TheSeasons-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-Bd.woff2') format('woff2'),
+        url('TheSeasons-Bd.woff') format('woff'),
+        url('TheSeasons-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-Reg.woff2') format('woff2'),
+        url('TheSeasons-Reg.woff') format('woff'),
+        url('TheSeasons-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-BdIt.woff2') format('woff2'),
+        url('TheSeasons-BdIt.woff') format('woff'),
+        url('TheSeasons-BdIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('TheSeasons-Lt.woff2') format('woff2'),
+        url('TheSeasons-Lt.woff') format('woff'),
+        url('TheSeasons-Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
