@@ -1,0 +1,60 @@
+@font-face {
+    font-family: '.';
+    src: url('2f24b98a74590a284667abed8bf0c018.woff2') format('woff2'),
+        url('2f24b98a74590a284667abed8bf0c018.woff') format('woff'),
+        url('2f24b98a74590a284667abed8bf0c018.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('63507af6e23782594116fc753b0f7cbe.woff2') format('woff2'),
+        url('63507af6e23782594116fc753b0f7cbe.woff') format('woff'),
+        url('63507af6e23782594116fc753b0f7cbe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Regular.woff2') format('woff2'),
+        url('Graphik-Regular.woff') format('woff'),
+        url('Graphik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Medium.woff2') format('woff2'),
+        url('Graphik-Medium.woff') format('woff'),
+        url('Graphik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('9ea510068d4ac1da7c488962cfbce685.woff2') format('woff2'),
+        url('9ea510068d4ac1da7c488962cfbce685.woff') format('woff'),
+        url('9ea510068d4ac1da7c488962cfbce685.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('ffbc7e1b0f82645a8d69689477d89579.woff2') format('woff2'),
+        url('ffbc7e1b0f82645a8d69689477d89579.woff') format('woff'),
+        url('ffbc7e1b0f82645a8d69689477d89579.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
