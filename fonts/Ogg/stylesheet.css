@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ogg';
+    src: url('Ogg-Roman.woff2') format('woff2'),
+        url('Ogg-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
