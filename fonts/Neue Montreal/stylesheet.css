@@ -1,8 +1,9 @@
 @font-face {
     font-family: 'Neue Montreal';
-    src: url('NeueMontreal-Regular.woff2') format('woff2'),
-        url('NeueMontreal-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('NeueMontreal-Light.woff2') format('woff2'),
+        url('NeueMontreal-Light.woff') format('woff'),
+        url('NeueMontreal-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -10,9 +11,70 @@
 @font-face {
     font-family: 'Neue Montreal';
     src: url('NeueMontreal-Bold.woff2') format('woff2'),
-        url('NeueMontreal-Bold.woff') format('woff');
+        url('NeueMontreal-Bold.woff') format('woff'),
+        url('NeueMontreal-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-BoldItalic.woff2') format('woff2'),
+        url('NeueMontreal-BoldItalic.woff') format('woff'),
+        url('NeueMontreal-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-MediumItalic.woff2') format('woff2'),
+        url('NeueMontreal-MediumItalic.woff') format('woff'),
+        url('NeueMontreal-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-RegularItalic.woff2') format('woff2'),
+        url('NeueMontreal-RegularItalic.woff') format('woff'),
+        url('NeueMontreal-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-Medium.woff2') format('woff2'),
+        url('NeueMontreal-Medium.woff') format('woff'),
+        url('NeueMontreal-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-Regular.woff2') format('woff2'),
+        url('NeueMontreal-Regular.woff') format('woff'),
+        url('NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-LightItalic.woff2') format('woff2'),
+        url('NeueMontreal-LightItalic.woff') format('woff'),
+        url('NeueMontreal-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
     font-display: swap;
 }
 
