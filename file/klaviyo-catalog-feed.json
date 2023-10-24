@@ -1,126 +1,22 @@
 [
   {
     "id": "10001",
-    "title": "Classic Klaviyo T-Shirt 1",
-    "link": "https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1",
-    "description": "Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.",
-    "image_link": "https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png",
+    "title": "Dummy tittle",
+    "link": "https://example.com",
+    "description": "Description text",
+    "image_link": "https://example.com/image.png",
     "post_code": "10001",
-    "sort_by": "position",
-    "sort_order": "asc",
-    "articles": [
-      {
-        "contaminants": "Bromodichloromethane",
-        "potential_effect": "cancer",
-        "value": "73x"
-      },
-      {
-        "contaminants": "Bromoform",
-        "potential_effect": "cancer",
-        "value": "2.8x"
-      },
-      {
-        "contaminants": "Chloroform",
-        "potential_effect": "cancer",
-        "value": "80x"
-      },
-      {
-        "contaminants": "Chromium (hexavalent)",
-        "potential_effect": "cancer",
-        "value": "2.1x"
-      },
-      {
-        "contaminants": "Dibromochloromethane",
-        "potential_effect": "cancer",
-        "value": "2.3x"
-      },
-      {
-        "contaminants": "Dichloroacetic acid",
-        "potential_effect": "cancer",
-        "value": "75x"
-      },
-      {
-        "contaminants": "Haloacetic acids (HAA5)†",
-        "potential_effect": "cancer",
-        "value": "379x"
-      },
-      {
-        "contaminants": "Haloacetic acids (HAA9)†",
-        "potential_effect": "cancer",
-        "value": "892x"
-      },
-      {
-        "contaminants": "Total trihalomethanes (TTHMs)†",
-        "potential_effect": "cancer",
-        "value": "254x"
-      },
-      {
-        "contaminants": "Trichloroacetic acid",
-        "potential_effect": "cancer",
-        "value": "228x"
-      }
-    ]
+    "Bromodichloromethane": "73x",
+    "Bromoform": "2.8x"
   },
   {
     "id": "10002",
-    "title": "Classic Klaviyo T-Shirt 2",
-    "link": "https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1",
-    "description": "Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.",
-    "image_link": "https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png",
+    "title": "Dummy tittle",
+    "link": "https://example.com",
+    "description": "Description text",
+    "image_link": "https://example.com/image.png",
     "post_code": "10002",
-    "sort_by": "position",
-    "sort_order": "asc",
-    "articles": [
-      {
-        "contaminants": "Bromodichloromethane",
-        "potential_effect": "cancer",
-        "value": "73x"
-      },
-      {
-        "contaminants": "Bromoform",
-        "potential_effect": "cancer",
-        "value": "2.8x"
-      },
-      {
-        "contaminants": "Chloroform",
-        "potential_effect": "cancer",
-        "value": "80x"
-      },
-      {
-        "contaminants": "Chromium (hexavalent)",
-        "potential_effect": "cancer",
-        "value": "2.1x"
-      },
-      {
-        "contaminants": "Dibromochloromethane",
-        "potential_effect": "cancer",
-        "value": "2.3x"
-      },
-      {
-        "contaminants": "Dichloroacetic acid",
-        "potential_effect": "cancer",
-        "value": "75x"
-      },
-      {
-        "contaminants": "Haloacetic acids (HAA5)†",
-        "potential_effect": "cancer",
-        "value": "379x"
-      },
-      {
-        "contaminants": "Haloacetic acids (HAA9)†",
-        "potential_effect": "cancer",
-        "value": "892x"
-      },
-      {
-        "contaminants": "Total trihalomethanes (TTHMs)†",
-        "potential_effect": "cancer",
-        "value": "254x"
-      },
-      {
-        "contaminants": "Trichloroacetic acid",
-        "potential_effect": "cancer",
-        "value": "228x"
-      }
-    ]
+    "Bromodichloromethane": "50x",
+    "Bromoform": "4x"
   }
 ]
