@@ -1,22 +1,38 @@
 [
-  {
-    "id": "10001",
-    "title": "Dummy tittle",
-    "link": "https://example.com",
-    "description": "Description text",
-    "image_link": "https://example.com/image.png",
-    "post_code": "10001",
-    "Bromodichloromethane": "73x",
-    "Bromoform": "2.8x"
-  },
-  {
-    "id": "10002",
-    "title": "Dummy tittle",
-    "link": "https://example.com",
-    "description": "Description text",
-    "image_link": "https://example.com/image.png",
-    "post_code": "10002",
-    "Bromodichloromethane": "50x",
-    "Bromoform": "4x"
-  }
+    {
+        "id": "10001",
+        "title": "Data for 10001",
+        "link": "https://www.ewg.org/tapwater/search-results.php?zip5=10001&searchtype=zip",
+        "description": "Data for 10001",
+        "image_link": "",
+        "post_code": "10001",
+        "Bromodichloromethane": "73x",
+        "Bromoform": "2.8x",
+        "Chloroform": "80x",
+        "Chromium (hexavalent)": "2.1x",
+        "Dibromochloromethane": "2.3x",
+        "Dichloroacetic acid": "75x",
+        "Haloacetic acids (HAA5)†": "379x",
+        "Haloacetic acids (HAA9)†": "892x",
+        "Total trihalomethanes (TTHMs)†": "254x",
+        "Trichloroacetic acid": "228x"
+    },
+    {
+        "id": "10002",
+        "title": "Data for 10002",
+        "link": "https://www.ewg.org/tapwater/search-results.php?zip5=10002&searchtype=zip",
+        "description": "Data for 10002",
+        "image_link": "",
+        "post_code": "10002",
+        "Bromodichloromethane": "73x",
+        "Bromoform": "2.8x",
+        "Chloroform": "80x",
+        "Chromium (hexavalent)": "2.1x",
+        "Dibromochloromethane": "2.3x",
+        "Dichloroacetic acid": "75x",
+        "Haloacetic acids (HAA5)†": "379x",
+        "Haloacetic acids (HAA9)†": "892x",
+        "Total trihalomethanes (TTHMs)†": "254x",
+        "Trichloroacetic acid": "228x"
+    }
 ]
