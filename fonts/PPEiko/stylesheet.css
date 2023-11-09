@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('PPEiko-LightItalic.woff2') format('woff2'),
+        url('PPEiko-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
