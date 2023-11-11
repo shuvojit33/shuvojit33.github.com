@@ -34,7 +34,7 @@
 "bromochloroacetic_acid": null,
 "haloacetic_acids_haa9_": null,
 "manganese": null,
-"not_found_flag": false
+"not_found_flag": "false"
 },
 {
 "link": "na",
@@ -57,7 +57,7 @@
 "id": "10499",
 "image_link": "na",
 "title": "na",
-"not_found_flag": true
+"not_found_flag": "true"
 },
   {
     "link": "na",
