@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Puente';
+    src: url('PuenteBold.woff2') format('woff2'),
+        url('PuenteBold.woff') format('woff'),
+        url('PuenteBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
