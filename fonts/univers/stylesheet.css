@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'UniversLTW05-67BoldCond';
+    src: url('https://dev.dascodes.com/fonts/univers/UniversLTW05-67BoldCond.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/univers/UniversLTW05-67BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
