@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Reckless Neue Book';
+    src: url('https://dev.dascodes.com/fonts/RecklessNeue/RecklessNeue-Book.woff2') format('woff2'),
+        url('https://dev.dascodes.com/fonts/RecklessNeue/RecklessNeue-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
