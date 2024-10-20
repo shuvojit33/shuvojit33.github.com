@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'GT America Rg';
+    src: url('GTAmerica-Rg.woff2') format('woff2'),
+        url('GTAmerica-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT America Cn Rg';
+    src: url('GTAmerica-CnBd.woff2') format('woff2'),
+        url('GTAmerica-CnBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
