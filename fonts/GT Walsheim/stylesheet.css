@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'GT Walsheim Trial Bd';
+    src: url('GTWalsheimTrial-Bd.woff2') format('woff2'),
+        url('GTWalsheimTrial-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Trial Rg';
+    src: url('GTWalsheimTrial-Rg.woff2') format('woff2'),
+        url('GTWalsheimTrial-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
