@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Create PIXI sprite (Waits until texture loads before rendering)
   const texture = PIXI.Texture.from(imgLink);
 
-  if (texture.baseTexture.valid) {
+  if (texture.baseTexture.hasLoaded) {
       console.log("✅ Image already loaded from cache!");
-      addImageToStage(texture); // Use it immediately
+      addImageToStage(texture); // Use immediately
   } else {
       texture.baseTexture.once("loaded", () => {
           console.log("✅ Image just finished loading!");
