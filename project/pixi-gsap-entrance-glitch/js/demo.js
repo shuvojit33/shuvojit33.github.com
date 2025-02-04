@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Create PIXI sprite (Waits until texture loads before rendering)
   const texture = PIXI.Texture.from(imgLink);
 
-  if (texture.baseTexture.hasLoaded) {
-      console.log("✅ Image already loaded from cache! #2");
-      addImageToStage(texture); // Use immediately
+  if (texture.baseTexture.valid) {
+      console.log("✅ Image already loaded from cache! #4");
+      requestAnimationFrame(() => addImageToStage(texture)); // Ensures PIXI renders properly
   } else {
       texture.baseTexture.once("loaded", () => {
-          console.log("✅ Image just finished loading! #2");
+          console.log("✅ Image just finished loading! #4");
           addImageToStage(texture);
       });
   }
