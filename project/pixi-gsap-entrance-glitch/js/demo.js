@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Create PIXI sprite (Waits until texture loads before rendering)
   const texture = PIXI.Texture.from(imgLink);
 
+  texture.baseTexture.resource.url = imgLink; // Forces reload
+
   texture.baseTexture.once("loaded", () => {
     console.log("✅ Image loaded successfully!");
 
