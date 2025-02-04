@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Load Animation</title>    
+    <style>
+      body {
+        margin: 0;
+        background: #121212;
+      }
+
+      .image-container {
+        position: relative;
+        max-width: 100%;
+      }
+
+      .image-container canvas {
+        opacity: 0;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="image-container" data-width="600" data-height="700">
+        <canvas class="pixi"></canvas>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.0/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi-filters@3.0.3/dist/pixi-filters.js"></script>
+
+    <script src="js/demo.js"></script>
+  </body>
+</html>
