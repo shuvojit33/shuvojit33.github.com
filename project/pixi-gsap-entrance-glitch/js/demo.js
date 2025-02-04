@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const texture = PIXI.Texture.from(imgLink);
 
   if (texture.baseTexture.hasLoaded) {
-      console.log("✅ Image already loaded from cache!");
+      console.log("✅ Image already loaded from cache! #2");
       addImageToStage(texture); // Use immediately
   } else {
       texture.baseTexture.once("loaded", () => {
-          console.log("✅ Image just finished loading!");
+          console.log("✅ Image just finished loading! #2");
           addImageToStage(texture);
       });
   }
