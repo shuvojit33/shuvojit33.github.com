@@ -26,9 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Create PIXI sprite (Waits until texture loads before rendering)
   const texture = PIXI.Texture.from(imgLink);
 
-  texture.baseTexture.resource.url = imgLink; // Forces reload
+  if (texture.baseTexture.valid) {
+      console.log("✅ Image already loaded from cache!");
+      addImageToStage(texture); // Use it immediately
+  } else {
+      texture.baseTexture.once("loaded", () => {
+          console.log("✅ Image just finished loading!");
+          addImageToStage(texture);
+      });
+  }
 
-  texture.baseTexture.once("loaded", () => {
+  function addImageToStage(texture) {
     console.log("✅ Image loaded successfully!");
 
     const img = new PIXI.Sprite(texture);
@@ -174,5 +182,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Run entrance animation after image loads
     runEntranceAnimation();
-  });
+  }
 });
